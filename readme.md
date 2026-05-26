@@ -24,7 +24,7 @@ A Versao Thick/Tiny e uma implementacao robusta projetada para detectar com alta
 * O pipeline e compativel com CPU e GPU (CUDA). Se uma GPU NVIDIA estiver disponivel, o PyTorch a utilizara automaticamente.
 
 ### Passo 1: Instalar Dependencias
-Navegue ate a pasta `versão_1` e instale as dependencias necessarias executando no seu terminal:
+Instale as dependencias necessarias executando no seu terminal na raiz do repositorio:
 
 ```bash
 pip install -r requirements.txt
@@ -38,11 +38,11 @@ As dependencias principais incluem:
 * scikit-image: Algoritmos de processamento morfologico e cientifico de imagem, incluindo a esqueletizacao.
 
 ### Passo 2: Organizar os Pesos Pre-Treinados
-Crie uma pasta chamada `weights` na raiz do projeto (ou dentro da pasta `versão_1`) e coloque os arquivos de pesos baixados la dentro.
+Crie uma pasta chamada `weights` na raiz do repositorio e coloque os arquivos de pesos baixados la dentro.
 Os arquivos de pesos necessarios sao detalhados na secao 3 deste documento.
 
 ### Passo 3: Executar a Inferência
-Para rodar a deteccao na imagem de teste fornecida, execute o comando a partir da pasta `versão_1`:
+Para rodar a deteccao na imagem de teste fornecida, execute o comando a partir da raiz do repositorio:
 
 ```bash
 python run_thick.py "Captura de tela 2026-05-12 003536.png"
@@ -133,7 +133,7 @@ A execucao do pipeline segue uma sequencia logica e modular estruturada em quatr
 ## 5. Estrutura de Arquivos da Versao Thick/Tiny
 
 ```
-versão_1/
+. (Raiz do Repositorio)
 ├── run_thick.py               # Ponto de entrada do pipeline thick/tiny
 ├── requirements.txt           # Lista de dependencias do Python
 ├── readme.md                  # Este manual de instrucoes

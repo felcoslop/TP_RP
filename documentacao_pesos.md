@@ -21,7 +21,7 @@ Os seguintes arquivos de pesos sao utilizados pelo modelo e devem ser organizado
 Siga estes passos para configurar os pesos na sua maquina fisica:
 
 ### Passo 1: Criar a Pasta de Pesos
-Crie um diretorio chamado `weights` na raiz do seu projeto ou dentro da pasta `versão_1/`:
+Crie um diretorio chamado `weights` na raiz do seu repositorio:
 ```bash
 mkdir weights
 ```
