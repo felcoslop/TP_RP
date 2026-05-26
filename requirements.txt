@@ -1,0 +1,8 @@
+torch
+torchvision
+torchaudio
+pytorch-lightning
+transformers
+networkx
+opencv-python-headless
+segment-anything
