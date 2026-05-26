@@ -144,16 +144,8 @@ versão_1/
 │   └── ramo_b.py              # Geometry Decoder para mascaras e keypoints
 └── pipeline/                  # Modulos logicos e heuristicas
     ├── __init__.py
-    ├── asphalt_cues.py        # Auxiliares de textura e classificacao
     ├── bridge_gaps.py         # Algoritmo de conexao de lacunas morfologicas
     ├── classify.py            # Hysteresis, classificacao HSV, close gaps e stubs
-    ├── context_filter.py      # Filtro de rios e caminhos florestais nao-vias
-    ├── edge_detection.py      # Reforco de probabilidade por gradiente de borda
-    ├── export.py              # Utilitarios de salvamento e exportacao
-    ├── preprocess.py          # Utilitarios basicos de imagem
-    ├── scene_cleaner.py       # Mascaramento dinamico de areas verdes/telhados
-    ├── signal_gates.py        # Supressores dinamicos espectrais
-    ├── thick_roads.py         # Motor principal do pipeline thick/tiny
-    ├── tolerant_binarize.py   # Binarizacao hysteresis adaptativa
-    └── graph_complete.py      # Completador de grafos topologico
+    └── thick_roads.py         # Motor principal do pipeline thick/tiny
 ```
+
