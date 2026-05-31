@@ -48,6 +48,20 @@ Para rodar a deteccao na imagem de teste fornecida, execute o comando a partir d
 python run_thick.py "Captura de tela 2026-05-12 003536.png"
 ```
 
+### Pre-processamento opcional (classico)
+
+Foi adicionada uma etapa opcional de pre-processamento com filtros classicos de Reconhecimento de Padroes e Processamento Digital de Imagens. O objetivo e avaliar se tecnicas como suavizacao, realce de contraste, realce de nitidez e operadores de borda podem destacar padroes visuais associados as vias, como bordas paralelas, continuidade, contraste e estruturas lineares. Esses filtros nao substituem o pipeline principal, apenas geram versoes alternativas da imagem de entrada para comparacao experimental.
+
+Exemplos:
+
+```bash
+python run_thick.py --image "Captura de tela 2026-05-12 003536.png" --preprocess none
+python run_thick.py --image "Captura de tela 2026-05-12 003536.png" --preprocess clahe
+python run_thick.py --image "Captura de tela 2026-05-12 003536.png" --preprocess sharpen
+python run_thick.py --image "Captura de tela 2026-05-12 003536.png" --preprocess sobel_fusion
+python run_thick.py --image "Captura de tela 2026-05-12 003536.png" --preprocess canny_fusion
+```
+
 ---
 
 ## 3. Documentacao dos Pesos Pre-Treinados

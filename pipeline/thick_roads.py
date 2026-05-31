@@ -339,7 +339,7 @@ def _binarize_sensitive(fused_road, fused_keypoint, typical_width):
 # Pipeline principal
 # ---------------------------------------------------------------------------
 
-def run(image_path, checkpoint="weights/cityscale_vitb_512_e10.ckpt"):
+def run(image_path, checkpoint="weights/cityscale_vitb_512_e10.ckpt", img_rgb=None):
     from pipeline.classify import (
         measure_road_widths,
         classify_road_surface,
@@ -349,10 +349,11 @@ def run(image_path, checkpoint="weights/cityscale_vitb_512_e10.ckpt"):
         prune_dangling_stubs,
     )
 
-    img_bgr = cv2.imread(image_path)
-    if img_bgr is None:
-        raise ValueError(f"Imagem nao encontrada: {image_path}")
-    img_rgb = cv2.cvtColor(img_bgr, cv2.COLOR_BGR2RGB)
+    if img_rgb is None:
+        img_bgr = cv2.imread(image_path)
+        if img_bgr is None:
+            raise ValueError(f"Imagem nao encontrada: {image_path}")
+        img_rgb = cv2.cvtColor(img_bgr, cv2.COLOR_BGR2RGB)
     h, w    = img_rgb.shape[:2]
     print(f"Imagem: {w}x{h}")
 
