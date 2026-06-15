@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.6.2)  14 JUN 2026 22:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.6.2)  14 JUN 2026 23:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1358,7 +1358,7 @@ Package rerunfilecheck Info: File `apresentacao_vias.out' has not changed.
 Here is how much of TeX's memory you used:
  24198 strings out of 467871
  481494 string characters out of 5414953
- 863450 words of memory out of 5000000
+ 863442 words of memory out of 5000000
  52496 multiletter control sequences out of 15000+600000
  645384 words of font info for 104 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1386,7 +1386,7 @@ msfonts/cm/cmtt8.pfb><C:/Users/Felipe Costa/AppData/Local/Programs/MiKTeX/fonts
 /type1/public/amsfonts/cm/cmtt9.pfb><C:/Users/Felipe Costa/AppData/Local/Progra
 ms/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
 Output written on "C:\Users\Felipe Costa\Downloads\BACKUP\Downloads\TP_RP_2026_
-1\versão_2\latex\apresentacao\apresentacao_vias.pdf" (26 pages, 23220248 bytes
+1\versão_2\latex\apresentacao\apresentacao_vias.pdf" (26 pages, 23218244 bytes
 ).
 PDF statistics:
  1016 PDF objects out of 1200 (max. 8388607)

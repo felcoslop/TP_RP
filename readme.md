@@ -19,8 +19,8 @@ abandonadas.
 - [Avaliação quantitativa](#avaliacao)
 - [Fine-tuning dos pesos](#finetune) — **não executado** (sem GPU; Colab limita a ~4 h)
 - [Estrutura de arquivos](#estrutura) — documentação de cada arquivo em [`ARQUIVOS.md`](ARQUIVOS.md)
-- **Relatório Final (PDF)**: [`latex/relatorio.pdf`](latex/relatorio.pdf) (código: [`latex/relatorio.tex`](latex/relatorio.tex))
-- **Apresentação do Projeto (PDF)**: [`latex/apresentacao/apresentacao_vias.pdf`](latex/apresentacao/apresentacao_vias.pdf) (código: [`latex/apresentacao/apresentacao_vias.tex`](latex/apresentacao/apresentacao_vias.tex))
+- **Relatório Final (PDF)**: [`latex/relatorio.pdf`](latex/relatorio.pdf)
+- **Apresentação do Projeto (PDF)**: [`latex/apresentacao/apresentacao_vias.pdf`](latex/apresentacao/apresentacao_vias.pdf)
 
 ---
 
@@ -321,7 +321,7 @@ estradas de terra.
 ## 6. Estrutura de arquivos
 
 ```
-versão_2/
+.
 ├── run.py                      # ponto de entrada (as duas maneiras de rodar)
 ├── requirements.txt            # dependências Python
 ├── README.md                   # este arquivo
@@ -358,11 +358,6 @@ versão_2/
 
 ### Relatório e apresentação
 
-- **Relatório (artigo):** [`latex/relatorio.tex`](latex/relatorio.tex) — compile
-  com `pdflatex relatorio.tex` (rode 2×). Cobre introdução, revisão
-  bibliográfica, metodologia (os 9 passos), resultados por imagem e limitações.
-- **Apresentação (Beamer):** [`latex/apresentacao/apresentacao_vias.tex`](latex/apresentacao/apresentacao_vias.tex).
-- As figuras de ambos saem de `python montar_figuras.py` (lê `outputs/` e grava
-  em `latex/figuras/` e `latex/apresentacao/figuras/`).
-
-Cada arquivo está documentado individualmente em [`ARQUIVOS.md`](ARQUIVOS.md).
+- **Relatório Final (PDF):** [`latex/relatorio.pdf`](latex/relatorio.pdf) — Artigo completo cobrindo introdução, revisão bibliográfica, metodologia (os 9 passos), resultados por imagem e limitações.
+- **Apresentação do Projeto (PDF):** [`latex/apresentacao/apresentacao_vias.pdf`](latex/apresentacao/apresentacao_vias.pdf) — Slides em formato Beamer.
+- As figuras de ambos são geradas pelo script `python montar_figuras.py` (que lê `outputs/` e grava em `latex/figuras/` e `latex/apresentacao/figuras/`).
