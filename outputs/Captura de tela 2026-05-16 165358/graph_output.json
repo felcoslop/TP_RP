@@ -1,0 +1,960 @@
+{
+  "graph_metadata": {
+    "source_image": "Captura de tela 2026-05-16 165358.png",
+    "n_vertices": 37,
+    "n_edges": 25,
+    "surface_legend": {
+      "1": "asfalto",
+      "2": "terra"
+    }
+  },
+  "vertices": [
+    {
+      "node_id": 0,
+      "x": 378.0,
+      "y": 0.0,
+      "type": "waypoint"
+    },
+    {
+      "node_id": 1,
+      "x": 388.0,
+      "y": 0.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 2,
+      "x": 1183.0,
+      "y": 129.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 3,
+      "x": 417.0,
+      "y": 157.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 4,
+      "x": 1760.7,
+      "y": 190.7,
+      "type": "intersection"
+    },
+    {
+      "node_id": 5,
+      "x": 1821.0,
+      "y": 229.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 6,
+      "x": 1883.0,
+      "y": 258.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 7,
+      "x": 1182.0,
+      "y": 269.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 8,
+      "x": 379.0,
+      "y": 284.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 9,
+      "x": 2101.0,
+      "y": 298.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 10,
+      "x": 302.0,
+      "y": 343.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 11,
+      "x": 2052.7,
+      "y": 371.3,
+      "type": "intersection"
+    },
+    {
+      "node_id": 12,
+      "x": 359.7,
+      "y": 373.7,
+      "type": "intersection"
+    },
+    {
+      "node_id": 13,
+      "x": 312.0,
+      "y": 388.2,
+      "type": "intersection"
+    },
+    {
+      "node_id": 14,
+      "x": 371.8,
+      "y": 437.0,
+      "type": "intersection"
+    },
+    {
+      "node_id": 15,
+      "x": 404.0,
+      "y": 450.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 16,
+      "x": 2128.0,
+      "y": 454.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 17,
+      "x": 1885.0,
+      "y": 457.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 18,
+      "x": 397.0,
+      "y": 459.2,
+      "type": "intersection"
+    },
+    {
+      "node_id": 19,
+      "x": 378.0,
+      "y": 509.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 20,
+      "x": 2166.0,
+      "y": 509.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 21,
+      "x": 753.0,
+      "y": 723.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 22,
+      "x": 568.0,
+      "y": 744.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 23,
+      "x": 578.0,
+      "y": 759.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 24,
+      "x": 833.0,
+      "y": 761.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 25,
+      "x": 581.0,
+      "y": 763.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 26,
+      "x": 595.0,
+      "y": 782.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 27,
+      "x": 597.0,
+      "y": 785.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 28,
+      "x": 2347.0,
+      "y": 814.5,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 29,
+      "x": 1522.0,
+      "y": 1001.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 30,
+      "x": 14.0,
+      "y": 1051.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 31,
+      "x": 1069.0,
+      "y": 1091.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 32,
+      "x": 1582.0,
+      "y": 1091.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 33,
+      "x": 2044.0,
+      "y": 1091.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 34,
+      "x": 33.5,
+      "y": 1092.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 35,
+      "x": 1955.0,
+      "y": 0.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 36,
+      "x": 1313.0,
+      "y": 0.0,
+      "type": "endpoint"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": 0,
+      "source": 0,
+      "target": 1,
+      "surface": "terra",
+      "width_px": 2.8,
+      "length_px": 10.0,
+      "confidence": 0.556,
+      "polyline": [
+        [
+          378.0,
+          0.0
+        ],
+        [
+          388.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 1,
+      "source": 0,
+      "target": 12,
+      "surface": "terra",
+      "width_px": 8.8,
+      "length_px": 406.4,
+      "confidence": 0.573,
+      "polyline": [
+        [
+          378.0,
+          0.0
+        ],
+        [
+          364.0,
+          5.0
+        ],
+        [
+          348.0,
+          31.0
+        ],
+        [
+          337.0,
+          101.0
+        ],
+        [
+          346.0,
+          271.0
+        ],
+        [
+          360.0,
+          358.0
+        ],
+        [
+          360.0,
+          373.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 2,
+      "source": 2,
+      "target": 7,
+      "surface": "terra",
+      "width_px": 6.0,
+      "length_px": 142.9,
+      "confidence": 0.226,
+      "polyline": [
+        [
+          1183.0,
+          129.0
+        ],
+        [
+          1182.0,
+          269.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 3,
+      "source": 3,
+      "target": 8,
+      "surface": "terra",
+      "width_px": 10.0,
+      "length_px": 154.7,
+      "confidence": 0.422,
+      "polyline": [
+        [
+          417.0,
+          157.0
+        ],
+        [
+          416.0,
+          227.0
+        ],
+        [
+          410.0,
+          267.0
+        ],
+        [
+          403.0,
+          279.0
+        ],
+        [
+          379.0,
+          284.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 4,
+      "source": 4,
+      "target": 35,
+      "surface": "terra",
+      "width_px": 8.8,
+      "length_px": 312.5,
+      "confidence": 0.462,
+      "polyline": [
+        [
+          1761.0,
+          190.0
+        ],
+        [
+          1769.0,
+          181.0
+        ],
+        [
+          1788.0,
+          173.0
+        ],
+        [
+          1843.0,
+          166.0
+        ],
+        [
+          1857.0,
+          159.0
+        ],
+        [
+          1875.0,
+          138.0
+        ],
+        [
+          1946.0,
+          4.0
+        ],
+        [
+          1955.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 5,
+      "source": 4,
+      "target": 36,
+      "surface": "terra",
+      "width_px": 10.8,
+      "length_px": 638.8,
+      "confidence": 0.429,
+      "polyline": [
+        [
+          1760.0,
+          191.0
+        ],
+        [
+          1735.0,
+          184.0
+        ],
+        [
+          1642.0,
+          132.0
+        ],
+        [
+          1625.0,
+          127.0
+        ],
+        [
+          1613.0,
+          127.0
+        ],
+        [
+          1596.0,
+          131.0
+        ],
+        [
+          1582.0,
+          139.0
+        ],
+        [
+          1509.0,
+          202.0
+        ],
+        [
+          1491.0,
+          209.0
+        ],
+        [
+          1459.0,
+          209.0
+        ],
+        [
+          1444.0,
+          201.0
+        ],
+        [
+          1420.0,
+          175.0
+        ],
+        [
+          1342.0,
+          51.0
+        ],
+        [
+          1322.0,
+          6.0
+        ],
+        [
+          1313.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 6,
+      "source": 4,
+      "target": 5,
+      "surface": "terra",
+      "width_px": 8.8,
+      "length_px": 77.5,
+      "confidence": 0.564,
+      "polyline": [
+        [
+          1761.0,
+          191.0
+        ],
+        [
+          1766.0,
+          199.0
+        ],
+        [
+          1821.0,
+          229.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 7,
+      "source": 6,
+      "target": 11,
+      "surface": "terra",
+      "width_px": 11.6,
+      "length_px": 216.4,
+      "confidence": 0.395,
+      "polyline": [
+        [
+          1883.0,
+          258.0
+        ],
+        [
+          1895.0,
+          271.0
+        ],
+        [
+          1952.0,
+          312.0
+        ],
+        [
+          2039.0,
+          367.0
+        ],
+        [
+          2052.0,
+          371.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 8,
+      "source": 9,
+      "target": 11,
+      "surface": "terra",
+      "width_px": 4.4,
+      "length_px": 92.9,
+      "confidence": 1.0,
+      "polyline": [
+        [
+          2101.0,
+          298.0
+        ],
+        [
+          2059.0,
+          355.0
+        ],
+        [
+          2053.0,
+          371.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 9,
+      "source": 10,
+      "target": 13,
+      "surface": "terra",
+      "width_px": 8.0,
+      "length_px": 50.1,
+      "confidence": 0.823,
+      "polyline": [
+        [
+          302.0,
+          343.0
+        ],
+        [
+          305.0,
+          381.0
+        ],
+        [
+          311.0,
+          388.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 10,
+      "source": 11,
+      "target": 20,
+      "surface": "terra",
+      "width_px": 10.8,
+      "length_px": 200.2,
+      "confidence": 0.546,
+      "polyline": [
+        [
+          2053.0,
+          372.0
+        ],
+        [
+          2083.0,
+          395.0
+        ],
+        [
+          2126.0,
+          421.0
+        ],
+        [
+          2154.0,
+          445.0
+        ],
+        [
+          2165.0,
+          466.0
+        ],
+        [
+          2166.0,
+          509.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 11,
+      "source": 12,
+      "target": 13,
+      "surface": "terra",
+      "width_px": 4.4,
+      "length_px": 51.8,
+      "confidence": 0.05,
+      "polyline": [
+        [
+          359.0,
+          374.0
+        ],
+        [
+          325.0,
+          382.0
+        ],
+        [
+          313.0,
+          388.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 12,
+      "source": 12,
+      "target": 14,
+      "surface": "terra",
+      "width_px": 8.0,
+      "length_px": 67.8,
+      "confidence": 0.429,
+      "polyline": [
+        [
+          360.0,
+          374.0
+        ],
+        [
+          372.0,
+          420.0
+        ],
+        [
+          372.0,
+          436.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 13,
+      "source": 13,
+      "target": 14,
+      "surface": "terra",
+      "width_px": 10.0,
+      "length_px": 82.4,
+      "confidence": 0.636,
+      "polyline": [
+        [
+          312.0,
+          389.0
+        ],
+        [
+          318.0,
+          401.0
+        ],
+        [
+          345.0,
+          426.0
+        ],
+        [
+          359.0,
+          435.0
+        ],
+        [
+          371.0,
+          437.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 14,
+      "source": 14,
+      "target": 18,
+      "surface": "terra",
+      "width_px": 10.4,
+      "length_px": 34.5,
+      "confidence": 0.636,
+      "polyline": [
+        [
+          372.0,
+          438.0
+        ],
+        [
+          385.0,
+          453.0
+        ],
+        [
+          396.0,
+          459.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 15,
+      "source": 15,
+      "target": 18,
+      "surface": "terra",
+      "width_px": 8.0,
+      "length_px": 11.5,
+      "confidence": 0.847,
+      "polyline": [
+        [
+          404.0,
+          450.0
+        ],
+        [
+          398.0,
+          459.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 16,
+      "source": 16,
+      "target": 17,
+      "surface": "terra",
+      "width_px": 6.0,
+      "length_px": 247.6,
+      "confidence": 0.784,
+      "polyline": [
+        [
+          2128.0,
+          454.0
+        ],
+        [
+          2031.0,
+          458.0
+        ],
+        [
+          1885.0,
+          457.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 17,
+      "source": 18,
+      "target": 19,
+      "surface": "terra",
+      "width_px": 8.4,
+      "length_px": 57.5,
+      "confidence": 0.468,
+      "polyline": [
+        [
+          397.0,
+          460.0
+        ],
+        [
+          395.0,
+          475.0
+        ],
+        [
+          378.0,
+          509.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 18,
+      "source": 21,
+      "target": 24,
+      "surface": "terra",
+      "width_px": 5.6,
+      "length_px": 99.4,
+      "confidence": 1.0,
+      "polyline": [
+        [
+          753.0,
+          723.0
+        ],
+        [
+          792.0,
+          721.0
+        ],
+        [
+          833.0,
+          761.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 19,
+      "source": 22,
+      "target": 23,
+      "surface": "terra",
+      "width_px": 2.8,
+      "length_px": 19.1,
+      "confidence": 1.0,
+      "polyline": [
+        [
+          568.0,
+          744.0
+        ],
+        [
+          578.0,
+          759.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 20,
+      "source": 25,
+      "target": 26,
+      "surface": "terra",
+      "width_px": 2.8,
+      "length_px": 24.8,
+      "confidence": 0.715,
+      "polyline": [
+        [
+          581.0,
+          763.0
+        ],
+        [
+          595.0,
+          782.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 21,
+      "source": 27,
+      "target": 31,
+      "surface": "terra",
+      "width_px": 5.6,
+      "length_px": 610.4,
+      "confidence": 1.0,
+      "polyline": [
+        [
+          597.0,
+          785.0
+        ],
+        [
+          641.0,
+          838.0
+        ],
+        [
+          681.0,
+          880.0
+        ],
+        [
+          847.0,
+          1045.0
+        ],
+        [
+          867.0,
+          1054.0
+        ],
+        [
+          899.0,
+          1059.0
+        ],
+        [
+          941.0,
+          1062.0
+        ],
+        [
+          1001.0,
+          1060.0
+        ],
+        [
+          1034.0,
+          1063.0
+        ],
+        [
+          1051.0,
+          1072.0
+        ],
+        [
+          1069.0,
+          1091.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 22,
+      "source": 28,
+      "target": 33,
+      "surface": "terra",
+      "width_px": 8.4,
+      "length_px": 433.1,
+      "confidence": 0.357,
+      "polyline": [
+        [
+          2347.0,
+          815.0
+        ],
+        [
+          2342.0,
+          826.0
+        ],
+        [
+          2303.0,
+          851.0
+        ],
+        [
+          2242.0,
+          898.0
+        ],
+        [
+          2133.0,
+          988.0
+        ],
+        [
+          2094.0,
+          1025.0
+        ],
+        [
+          2055.0,
+          1085.0
+        ],
+        [
+          2044.0,
+          1091.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 23,
+      "source": 29,
+      "target": 32,
+      "surface": "terra",
+      "width_px": 4.4,
+      "length_px": 115.4,
+      "confidence": 1.0,
+      "polyline": [
+        [
+          1522.0,
+          1001.0
+        ],
+        [
+          1541.0,
+          1036.0
+        ],
+        [
+          1582.0,
+          1091.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 24,
+      "source": 30,
+      "target": 34,
+      "surface": "terra",
+      "width_px": 4.0,
+      "length_px": 49.5,
+      "confidence": 0.344,
+      "polyline": [
+        [
+          14.0,
+          1051.0
+        ],
+        [
+          33.0,
+          1092.0
+        ]
+      ]
+    }
+  ]
+}

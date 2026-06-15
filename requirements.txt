@@ -6,3 +6,4 @@ transformers
 networkx
 opencv-python-headless
 segment-anything
+scikit-image

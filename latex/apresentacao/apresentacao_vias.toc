@@ -1,0 +1,7 @@
+\babel@toc {brazilian}{}\relax 
+\beamer@sectionintoc {1}{O Problema}{3}{0}{1}
+\beamer@sectionintoc {2}{Os Dados (Dataset)}{5}{0}{2}
+\beamer@sectionintoc {3}{O Modelo e os Pesos}{8}{0}{3}
+\beamer@sectionintoc {4}{Pipeline Passo a Passo}{10}{0}{4}
+\beamer@sectionintoc {5}{Resultados}{17}{0}{5}
+\beamer@sectionintoc {6}{Referências}{26}{0}{6}

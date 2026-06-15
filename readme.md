@@ -1,165 +1,368 @@
-# Manual do Pipeline de Deteccao de Malha Viaria - Versao Thick/Tiny
+# Detecção e Reconstrução de Malha Viária a partir de Imagens de Satélite
 
-Este documento contem as instrucoes passo a passo para a instalacao, configuracao, e execucao da Versao Thick/Tiny de extracao e reconstrucao de malhas viarias a partir de imagens de satelite, bem como a documentacao detalhada de todos os pesos pre-treinados utilizados.
+Sistema que identifica vias em imagens de satélite/mapas, classifica o
+pavimento (**asfalto** ou **terra**), sobrepõe o resultado na imagem original
+e exporta a malha como **grafo conectado** (vértices = cruzamentos, arestas =
+segmentos de via). Trabalho da disciplina de Reconhecimento de Padrões.
 
----
-
-## 1. O que e o Pipeline Thick/Tiny (`run_thick.py`)
-
-A Versao Thick/Tiny e uma implementacao robusta projetada para detectar com alta precisao vias de todas as larguras (estradas principais largas e caminhos de terra finos) atraves de uma inferencia leve e de alta performance. Diferente do pipeline completo tradicional de inferencia multi-escala lento, o pipeline `run_thick.py` otimiza a performance atraves das seguintes tecnicas:
-
-1. Inferencia Multi-Escala Baseada em Scout: Roda uma inferencia rapida em escala scout (0.5x) para estimar a largura tipica das estradas. Se for detectado alto zoom (vias largas), processa a imagem em 0.5x e 1.0x. Se for detectado zoom padrao, processa em 1.0x e 2.0x. Isso garante que vias finas sejam vistas sem sobrecarregar a CPU.
-2. Sem Rastreamento Direcional Caro: Remove a etapa mais lenta do pipeline (o trace direcional pixel-a-pixel por busca angular), substituindo-a inteiramente pelo modulo ultra-rapido de processamento e classificacao morfologica `pipeline/classify.py`.
-3. Algoritmo de Pontes Morfologicas (Bridge Gaps): Utiliza binarizacao por hysteresis e dilatacao inteligente para unir trechos descontinuados sob copas de arvores e sombras, mantendo a consistencia topologica da malha.
-4. Classificacao Semantica de Pavimento: Utiliza a combinacao da textura local (desvio padrao local 7x7 no grayscale) e cor no espaco HSV para segmentar as vias em asfalto (cinza escuro) ou terra (marrom/laranja) em milissegundos.
-5. Poda Inteligente de Stubs (Dangling Stubs): Remove dinamicamente ramos sem saida menores que o limite aceitavel de pixels de forma iterativa, limpando ruidos e falsos positivos do grafo final.
+Esta é a **versão final, enxuta** — contém apenas o melhor caminho de
+processamento validado experimentalmente, sem código de teste ou variações
+abandonadas.
 
 ---
 
-## 2. Passo a Passo de Execucao (Como rodar)
+## Índice rápido
 
-### Requisitos do Sistema
-* Python 3.8 ou superior (Recomendado Python 3.10 ou 3.11)
-* Sistema Operacional: Windows, Linux ou macOS
-* O pipeline e compativel com CPU e GPU (CUDA). Se uma GPU NVIDIA estiver disponivel, o PyTorch a utilizara automaticamente.
+- [Como rodar (duas maneiras)](#como-rodar)
+- [O que o sistema faz, passo a passo](#pipeline)
+- [Saídas geradas](#saidas)
+- [Avaliação quantitativa](#avaliacao)
+- [Fine-tuning dos pesos](#finetune) — **não executado** (sem GPU; Colab limita a ~4 h)
+- [Estrutura de arquivos](#estrutura) — documentação de cada arquivo em [`ARQUIVOS.md`](ARQUIVOS.md)
+- **Relatório Final (PDF)**: [`latex/relatorio.pdf`](latex/relatorio.pdf) (código: [`latex/relatorio.tex`](latex/relatorio.tex))
+- **Apresentação do Projeto (PDF)**: [`latex/apresentacao/apresentacao_vias.pdf`](latex/apresentacao/apresentacao_vias.pdf) (código: [`latex/apresentacao/apresentacao_vias.tex`](latex/apresentacao/apresentacao_vias.tex))
 
-### Passo 1: Instalar Dependencias
-Instale as dependencias necessarias executando no seu terminal na raiz do repositorio:
+---
+
+<a name="como-rodar"></a>
+## 1. Como rodar
+
+### Instalação (uma vez)
 
 ```bash
 pip install -r requirements.txt
 ```
 
-As dependencias principais incluem:
-* torch, torchvision: Motores de deep learning para rodar o encoder e o decoder do SAM.
-* segment-anything: Biblioteca oficial da Meta AI para a arquitetura do Vision Transformer (ViT).
-* opencv-python-headless: Biblioteca principal de processamento de imagens e visao computacional.
-* networkx: Estrutura de dados para construcao e manipulacao de grafos.
-* scikit-image: Algoritmos de processamento morfologico e cientifico de imagem, incluindo a esqueletizacao.
+Baixe os pesos e coloque na pasta `weights/` seguindo
+[`documentacao_pesos.md`](documentacao_pesos.md). Download direto do checkpoint
+principal (`cityscale_vitb_512_e10.ckpt`, ~1 GB):
 
-### Passo 2: Organizar os Pesos Pre-Treinados
-Crie uma pasta chamada `weights` na raiz do repositorio e coloque os arquivos de pesos baixados la dentro.
-Os arquivos de pesos necessarios sao detalhados na secao 3 deste documento.
+> **[ Baixar pesos (Google Drive)](https://drive.google.com/file/d/1e6AJ6tSdS1dVmAF4KuOcWVLpn5_opASH/view?usp=drive_link)**
 
-### Passo 3: Executar a Inferência
-Para rodar a deteccao na imagem de teste fornecida, execute o comando a partir da raiz do repositorio:
+### As duas maneiras de rodar
 
-```bash
-python run_thick.py "Captura de tela 2026-05-12 003536.png"
-```
+O sistema funciona com **dois conjuntos de pesos**, escolhidos com `--modelo`.
+Cada preset já embute o tamanho de patch correto — você não precisa lembrar.
 
-### Pre-processamento opcional (classico)
-
-Foi adicionada uma etapa opcional de pre-processamento com filtros classicos de Reconhecimento de Padroes e Processamento Digital de Imagens. O objetivo e avaliar se tecnicas como suavizacao, realce de contraste, realce de nitidez e operadores de borda podem destacar padroes visuais associados as vias, como bordas paralelas, continuidade, contraste e estruturas lineares. Esses filtros nao substituem o pipeline principal, apenas geram versoes alternativas da imagem de entrada para comparacao experimental.
-
-Exemplos:
+**Maneira 1 — pesos atuais (padrão).** Melhor para screenshots claros de
+mapas (Google/Bing Maps):
 
 ```bash
-python run_thick.py --image "Captura de tela 2026-05-12 003536.png" --preprocess none
-python run_thick.py --image "Captura de tela 2026-05-12 003536.png" --preprocess clahe
-python run_thick.py --image "Captura de tela 2026-05-12 003536.png" --preprocess sharpen
-python run_thick.py --image "Captura de tela 2026-05-12 003536.png" --preprocess sobel_fusion
-python run_thick.py --image "Captura de tela 2026-05-12 003536.png" --preprocess canny_fusion
+python run.py "imagens_teste/Captura de tela 2026-06-12 135241.png"
 ```
+
+**Maneira 2 — pesos do fine-tune (Colab).** Melhor para satélite bruto/escuro
+e estradas de terra. Requer o checkpoint gerado conforme
+[`training/finetune_local.md`](training/finetune_local.md):
+
+```bash
+python run.py "minha_imagem.png" --modelo finetuned
+```
+
+> **Nota: O fine-tuning não foi realizado neste trabalho.** Temos o dataset
+> (SpaceNet 3) e o notebook de treino prontos, mas **não dispomos de GPU local**
+> e o **Google Colab gratuito limita a sessão a ~4 h** — insuficiente para uma
+> época estável de uma ViT-B (~90 M de parâmetros). Por isso **todos os
+> resultados usam os pesos pré-treinados (Maneira 1)**; a Maneira 2 fica como
+> caminho documentado para trabalho futuro.
+
+**Toda execução salva, por padrão, a imagem de cada etapa do pipeline** na
+subpasta `passos/` (ver seção 3). Use `--sem-passos` para desligar (mais rápido).
+
+### Processar a pasta inteira de uma vez
+
+```bash
+python processar_pasta.py imagens_teste
+```
+
+Carrega o modelo **uma única vez** e processa todas as imagens da pasta,
+salvando cada resultado (com os passos) em `outputs/<nome_da_imagem>/`. Aceita
+as mesmas opções (`--modelo`, `--limiar-via`, `--toco-frac`, etc.).
+
+### Opções extras
+
+```bash
+python run.py "foto.png" --tta                  # robustez a rotação (4x mais lento)
+python run.py "foto.png" --sem-passos           # NÃO salva as imagens de cada etapa
+python run.py "foto.png" --limiar-via 0.45       # mais exigente: corta vias fracas (ver abaixo)
+python run.py "foto.png" --toco-frac 0.85        # remove traços internos de quarteirão mais longos
+python run.py "foto.png" --vias-claras nao       # rejeita vias claras (modo urbano, ver abaixo)
+python run.py "foto.png" --sem-preprocessamento # desliga o realce canny_fusion
+python run.py "foto.png" --sem-contexto         # desliga as máscaras de contexto
+python run.py "foto.png" --saida outputs/teste1 # pasta de saída
+```
+
+**`--vias-claras`** controla se linhas **claras/neutras** (branco/cinza-claro)
+podem ser via. Em **zoom próximo/urbano** uma rua de verdade é asfalto
+**escuro**, então linhas claras (calçadas, corredores, bordas de telhado)
+não devem virar rua; em **satélite alto/rural** a estrada de **terra é clara**
+e deve ser aceita. Modos: `auto` (padrão — rejeita só em zoom próximo, decidido
+pela largura típica do scout), `nao` (sempre rejeita — força modo urbano),
+`sim` (nunca rejeita — força modo rural/satélite).
+
+**`--brilho-min N`** (padrão 205) é a **tolerância** do portão: é o brilho
+mínimo (0–255) para um pixel claro ser rejeitado como via. **Menor N = rejeita
+mais** (menos tolerante, pega cinza-claro também); **maior N = mais tolerante**
+(só rejeita quase-branco). Abaixo de ~150 começa a comer ruas reais cinza.
+Ex.: `python run.py "foto.png" --vias-claras nao --brilho-min 190`.
+
+**`--limiar-via T`** (padrão 0.30) é a **tolerância da máscara de via**: na
+saída da rede (`thick_road_mask.png`, onde via = branco), só vira rua o branco
+≥ T. **Maior T corta as linhas fracas** (vias falsas que aparecem cinza-claras
+na máscara, mais exigente); **menor T aceita vias mais fracas** (bom para
+estradas de terra fracas). Ex.: `python run.py "foto.png" --limiar-via 0.50`.
+É a forma direta de "aumentar a tolerância" para tirar detecções fracas.
+
+**Por padrão** é criada a subpasta `passos/` dentro do resultado, com uma
+imagem por etapa (`1_original`, `2_preprocessamento_canny`,
+`3_probabilidade_modelo`, `4_mascaras_contexto`, `5_probabilidade_suprimida`,
+`6_binaria`, `7_grafo_bruto`, `8_grafo_refinado`, `9_overlay_final`) — útil
+para entender e apresentar como a detecção é feita. Desligue com `--sem-passos`.
+
+### Funciona em qualquer zoom (vias finas e largas)
+
+O sistema **detecta o zoom automaticamente** e adapta a escala — você não
+configura nada. Uma passada rápida ("scout") em 0.5x mede a largura típica das
+vias:
+
+- **Zoom alto** (vias largas, imagem próxima): processa em 0.5x + 1.0x.
+- **Zoom padrão/distante** (vias finas, estradas de terra estreitas):
+  processa em 1.0x + **2.0x**. Esse **upscale 2x** é o que permite a rede
+  "enxergar" caminhos de terra que teriam só 1–2 pixels na imagem original.
+
+As duas escalas são fundidas pegando a probabilidade máxima por pixel, o que
+preserva tanto as conexões finas quanto as largas.
 
 ---
 
-## 3. Documentacao dos Pesos Pre-Treinados
+<a name="pipeline"></a>
+## 2. O que o sistema faz, passo a passo
 
-O pipeline utiliza uma arquitetura baseada no Vision Transformer (ViT-B) herdado do Segment Anything (SAM) da Meta AI. Os pesos estao estruturados em pesos base e checkpoints ajustados (fine-tuned) para malha viaria.
+```
+imagem original ──┬─────────────────────────────► classificação / overlay / contexto
+                  │                                        ▲
+                  ▼ (só p/ a rede)                         │
+         realce canny_fusion                               │
+                  │                                        │
+                  ▼                                        │
+   inferência multi-escala (SAM-Road ViT-B) ──► prob. de via + cruzamentos
+                  │                                        │
+                  ▼                                        │
+   máscaras de contexto suprimem floresta/água/telhado/solo
+                  │
+                  ▼
+   binarização (hysteresis) ──► esqueleto ──► GRAFO (fonte única de verdade)
+                  │
+                  ▼
+   refino do grafo: funde nós, poda pontas, faz PONTES nos buracos (Dijkstra)
+                  │
+                  ▼
+   classificação de pavimento POR ARESTA (asfalto/terra) + suavização
+                  │
+                  ▼
+   overlay desenhado do grafo + JSON/GraphML
+```
 
-### 3.1 Peso Base: SAM ViT-B (Meta AI Research)
-* Arquivo de peso: `sam_vit_b_01ec64.pth`
-* Tamanho do arquivo: ~357 MB (375.042.383 bytes)
-* Finalidade: Serve como inicializador para o image encoder da rede. Foi treinado originalmente em mais de 11 milhoes de imagens de alta diversidade (SA-1B) para segmentacao automatica de qualquer objeto.
-* Link de Download Oficial:
-  https://dl.fbaipublicfiles.com/segment_anything/sam_vit_b_01ec64.pth
+**1. Realce de bordas (canny_fusion).** Antes da rede, a imagem recebe uma
+mistura de 15% do mapa de bordas de Canny, que realça as bordas paralelas
+características das vias. **Esse realce alimenta apenas a rede neural** — a
+classificação de pavimento, as máscaras e o desenho final usam sempre a
+imagem original (bordas sintéticas não podem ser confundidas com terra).
 
-### 3.2 Checkpoint Ajustado: CityScale ViT-B 512 (SAM-Road)
-* Arquivo de peso: `cityscale_vitb_512_e10.ckpt`
-* Tamanho do arquivo: ~1.00 GB (1.054.078.423 bytes)
-* Finalidade: Checkpoint principal ajustado especificamente no dataset CityScale (que contem mapeamentos urbanos de 20 cidades). Mapeia imagens de satelite diretamente em malha viaria e localizacao de intersecoes.
-* Estrutura interna: O arquivo `.ckpt` contem o dicionario do PyTorch Lightning com a chave `"state_dict"`, que encapsula:
-  * `image_encoder.*`: Pesos do encoder SAM ViT-B (carregado pelo pipeline thick).
-  * `map_decoder.*`: Pesos do decoder de geometria (carregado pelo pipeline thick para gerar a probabilidade de estradas e o heatmap de keypoints).
-  * `topo_net.*`: Pesos do decodificador de conexao geometrica (nao utilizado no pipeline thick para garantir maxima performance).
-* Link de Download Oficial:
-  https://drive.google.com/file/d/1e6AJ6tSdS1dVmAF4KuOcWVLpn5_opASH/view?usp=drive_link
+**2. Inferência multi-escala (SAM-Road ViT-B).** Um Vision Transformer
+(encoder do Segment Anything da Meta, ajustado para vias) processa a imagem em
+janelas de 512×512 com 50% de sobreposição, em duas escalas (ver seção 1),
+produzindo um mapa de probabilidade de via e um mapa de cruzamentos.
 
-### 3.3 Checkpoint Ajustado: SpaceNet ViT-B 256
-* Arquivo de peso: `spacenet_vitb_256_e10.ckpt`
-* Tamanho do arquivo: ~0.99 GB (1.046.803.927 bytes)
-* Finalidade: Checkpoint alternativo treinado no dataset SpaceNet3 (com imagens de 1.0 metro/pixel de resolucao). Por ter sido treinado com dados de maior variabilidade de terrenos e regioes suburbanas, ele pode apresentar maior robustez ao lidar com vias rurais e estradas de terra.
-* Link de Download Oficial:
-  https://drive.google.com/file/d/1e6AJ6tSdS1dVmAF4KuOcWVLpn5_opASH/view?usp=drive_link
+**3. Máscaras de contexto.** `pipeline/context_filter.py` detecta por
+cor/textura/forma quatro tipos de falso positivo e **suprime a probabilidade**
+naquelas regiões antes de binarizar:
+- **vegetação** (florestas, parques) — índice de verde com correção de véu de
+  cor global;
+- **água** (rios, mar, lagos) — baixa textura + matiz fria + área grande;
+- **telhados/quarteirões (polígonos de bloco)** — um quarteirão é uma **região
+  2-D grande** de construção; a rua é **fina**; o carro está **sobre a rua**.
+  A máscara marca o **bloco residencial inteiro** (telha, concreto, laje) e
+  **recorta as ruas** usando a própria probabilidade do modelo. Assim pega o
+  quarteirão todo, **não** marca carros como telhado e reduz vias falsas em
+  área residencial;
+- **solo exposto/desmatamento** — mesma paleta da estrada de terra, mas
+  discriminado pela **forma**: estrada é 1-D (esqueleto longo e fino), clareira
+  é 2-D. Suprimido parcialmente (a estrada de terra pode atravessá-lo).
 
-### 3.4 Como os Pesos Funcionam na Execucao (Muito Importante)
+Pixels onde a rede tem alta confiança nunca são suprimidos (ex.: ponte sobre
+rio).
 
-Para rodar a execucao do `run_thick.py`, o pipeline utiliza apenas 1 peso de cada vez (por padrao, o `cityscale_vitb_512_e10.ckpt`).
+**4. Binarização por hysteresis.** Pixels acima de 0.30 viram "semente"; os
+acima de 0.04 só entram se conectados a uma semente — isso reconstrói trechos
+esmaecidos no meio de vias confiantes. Limiares **absolutos** (não dependem da
+imagem); há um regime de sinal fraco para domínios fora do treino e um
+guard-rail que retorna "sem vias" em imagens sem estrada.
 
-1. Na Execucao (`run_thick.py`):
-O modelo precisa carregar apenas um arquivo de pesos para funcionar:
-* `cityscale_vitb_512_e10.ckpt` (Padrao): Este arquivo ja contem todos os pesos necessarios unificados dentro dele. Ele carrega tanto o Codificador de Imagem (SAMEncoder) quanto o Decodificador de Geometria (GeometryDecoder) de uma vez so.
-* `spacenet_vitb_256_e10.ckpt` (Alternativo): Se voce preferir usar o SpaceNet, passara ele como argumento, e ele substituira completamente o CityScale durante aquela execucao.
+**5. Grafo como fonte única de verdade.** `pipeline/graph_refine.py`
+esqueletiza a máscara e constrói um grafo (nós = junções/pontas, arestas =
+polylines). Todas as correções acontecem no grafo:
+- **funde** nós duplicados de junções;
+- **poda** pontas curtas e pontas que terminam dentro de telhado ("via dentro
+  de casa");
+- **remove traços internos de quarteirão**: uma estrada com **uma ponta solta**
+  (rua sem saída) cuja ponta cai **dentro de um quarteirão** (cercada por
+  telhado) e cujo **alcance é menor que 80% do menor lado do retângulo do
+  quarteirão** é removida — é sombra/vão/beco, não rua. Estradas que ligam dois
+  cruzamentos ou que cruzam o bloco são mantidas. Controlável por `--toco-frac`;
+- **faz pontes** nos buracos por **caminho de menor custo (Dijkstra
+  direcional)** sobre `custo = 1/(probabilidade) + contexto`. Água e telhado
+  bloqueiam; vegetação encarece mas não bloqueia (vias sob copas continuam
+  conectáveis pelo sinal residual). Resolve "estrada que para na metade".
 
-2. O papel do terceiro peso (`sam_vit_b_01ec64.pth`):
-O peso original da Meta AI (`sam_vit_b_01ec64.pth`) nao e carregado e nem utilizado durante a inferência (execucao do `run_thick.py`).
+> **Detecção de domínio: rural vs urbano.** O sistema decide automaticamente se
+> a imagem é **rural** = **muita vegetação (>25%) E malha viária esparsa
+> (<1,2% da imagem)**. Vegetação sozinha não basta: uma **favela num vale
+> verde** tem 40%+ de verde mas malha **densa** — é urbana. A densidade da via
+> separa limpo (rural de verdade ≤0,6%; favela/urbano ≥2%).
+>
+> Em imagem **rural**, todo o refino (calibrado p/ malha urbana, distorce no
+> campo): (a) é **pulado** — vai do grafo bruto direto ao overlay; (b) as
+> máscaras de **telhado e solo são desligadas** (não há quarteirões no campo,
+> só pintariam campos de vermelho e suprimiriam estrada de terra fina); a
+> supressão rural usa só vegetação + água; (c) a classe usa o limiar de terra
+> **baixo** (mais terra). Em imagem **urbana/favela**, o refino roda normal,
+> telhado/solo ligam e o limiar de terra é **alto** (mais asfalto).
+> Constantes: `VEG_SKIP_REFINE`, `ROAD_DENSITY_RURAL`, `TERRA_THR_*`.
 
-Ele serve unicamente para duas coisas:
-* Fase de Treinamento (Fine-tuning): E usado para inicializar a rede neural com o aprendizado generico da Meta antes de comecar a treinar o modelo do zero com imagens de satelite.
-* Fallback de Inicializacao: Se voce fosse criar ou treinar um decodificador customizado do zero, usaria ele para dar o pontape inicial no encoder.
+**6. Classificação de pavimento por aresta.** Em vez de decidir pixel a pixel
+(que causa efeito "zebra"), a classe é decidida **por aresta inteira**:
+mediana da evidência de cor/textura ao longo do núcleo da via. Uma
+suavização tipo Potts (ICM) faz vias que se continuam compartilharem a classe;
+quando há uma troca **real** de pavimento no meio de uma via longa, ela é
+detectada e a aresta é dividida com um nó de transição. Por fim, um trecho de
+**terra cercado só por asfalto** (ilha isolada) é revertido para asfalto — rua
+de terra real é um trecho conectado, não um toco solto no meio do asfalto.
+**Terra = laranja, asfalto = azul.**
+
+O limiar terra×asfalto é **adaptativo por domínio** (via fração de vegetação):
+terra seca clara (`p_terra` ~0,26) e asfalto cinza (~0,09) ficam próximos nessa
+evidência RGB, então um limiar único não serve. Imagem **urbana** (pouco verde)
+usa limiar **alto (0,45)** — evita asfalto fino virar laranja; imagem
+**rural/verde** usa limiar **baixo (0,20)** — pega estrada de terra. Interpola
+entre as âncoras de vegetação (`TERRA_THR_URBANO/RURAL` em `thick_roads.py`).
+*(Limitação conhecida: a distinção terra-clara × asfalto-cinza é difícil só com
+RGB; a solução robusta é a cabeça de superfície supervisionada do fine-tune.)*
+
+**7. Saídas.** O overlay é desenhado a partir do grafo (espessura = largura
+medida por Distance Transform) e o grafo é exportado em JSON e GraphML.
+
+### Fundamentação (estado da arte)
+
+A arquitetura **segmentação → grafo → classificação de material por aresta**
+segue o estado da arte de 2024–2025: SAM-Road (CVPRW 2024, base deste
+projeto), SAM-Road++ / dataset Global-Scale (CVPR 2025) e pipelines
+industriais (Brightearth/LuxCarta). A loss **clDice** (CVPR 2021), usada no
+fine-tuning, preserva a conectividade do esqueleto.
 
 ---
 
-## 4. Passo a Passo do Processamento (Como o Pipeline Thick Funciona)
+<a name="saidas"></a>
+## 3. Saídas geradas (na pasta `--saida`, padrão `outputs/`)
 
-A execucao do pipeline segue uma sequencia logica e modular estruturada em quatro fases principais:
+**Cada execução cria a sua própria subpasta** `outputs/run_AAAAMMDD_HHMMSS/`,
+então uma rodada nunca sobrescreve a anterior e a pasta mais recente (pela
+data/hora no nome) é sempre o último resultado. No fim da execução o programa
+imprime o caminho exato a abrir. Dentro de cada subpasta:
 
-### Fase 1: Pre-processamento e Analise de Zoom (Scout)
-1. Leitura e Conversao: A imagem de entrada e lida e convertida para o formato RGB em float32 (escala 0-255).
-2. Inferência Scout: Roda uma inferência inicial rápida em escala reduzida (0.5x) para detectar a largura típica das vias presentes na imagem.
-3. Decisão de Resolução:
-   * Se a largura média for > 16.0 pixels (zoom alto/ruas largas), o modelo rodará as escalas 0.5x e 1.0x.
-   * Se a largura média for <= 16.0 pixels (zoom padrão/ruas normais a finas), o modelo rodará em 1.0x e 2.0x para enxergar detalhes finos.
-
-### Fase 2: Inferência Multi-Escala e Fusão de Probabilidade
-1. Janela Deslizante (Sliding Window): Divide a imagem em patches de 512x512 pixels com sobreposição de 50% (stride de 256) em cada uma das escalas escolhidas.
-2. Predição dos Patches: O encoder SAM e o Geometry Decoder computam a probabilidade de estradas e cruzamentos por pixel na GPU ou CPU.
-3. Fusão Máxima: Combina os outputs de ambas as resoluções calculando a probabilidade máxima (`np.maximum`) por pixel para preservar conexões fracas e finas.
-
-### Fase 3: Reconstrução Morfológica e Classificação Semântica
-1. Algoritmo Bridge Gaps: Realiza a binarização por hysteresis baseada em sementes fortes (road_max * 0.15) e componentes fracos conectados (road_max * 0.02). Em seguida, dilata os componentes fortes pelo raio médio da via para criar pontes morfológicas em gaps sob árvores ou sombras.
-2. Medição de Largura por Transformada de Distância: Calcula a distância geométrica de cada pixel até a borda da via para atribuir a largura física correta de cada ponto da rua.
-3. Classificação Asfalto vs Terra:
-   * Analisa a textura local (desvio padrão de brilho 7x7) e a cor no espaço de cores HSV.
-   * Vias granulares (alto std) e de tom quente (laranja/marrom no HSV) são classificadas como terra.
-   * Vias lisas (baixo std) e de tons neutros (cinza/branco) são classificadas como asfalto.
-   * Aplica votação majoritária (>= 65% de dominância) para homogeneizar e unificar o pavimento ao longo do trecho conectado da via.
-4. Filtro de Blobs: Remove formas não-elongadas (como manchas de telhados e construções isoladas) que possuam razão de aspecto menor que 2.5.
-
-### Fase 4: Poda Morfológica e Geração de Saída
-1. Fechamento de Gaps de Conectividade: Executa buscas em leque a partir de extremidades soltas para reconectar cruzamentos e segmentos de ruas descontinuados.
-2. Poda Iterativa de Stubs: Rastreia extremidades sem saída (stubs) de forma iterativa e remove ramos com comprimento menor que o limite aceitável de pixels (`min_stub_px`), eliminando ruídos marginais.
-3. Desenho de Overlay e Gravação: Gera o overlay final de saída com as vias sobrepostas sobre a imagem bruta (linhas grossas de asfalto em cinza escuro e terra em marrom/laranja) e salva os arquivos finais em `outputs/`.
+| Arquivo | Conteúdo |
+|---|---|
+| `thick_overlay.png` | imagem original com as vias desenhadas (laranja = terra, azul = asfalto) |
+| `thick_surface.png` | máscara de classes sobre fundo preto |
+| `thick_road_mask.png` | mapa de probabilidade de via da rede (cinza) |
+| `context_masks.png` | depuração das máscaras (**verde**=vegetação, **azul**=água, **vermelho**=telhado/quarteirão, **amarelo**=solo exposto, **rosa/magenta**=rejeição por brilho) |
+| `graph_output.json` | grafo: vértices (x, y, tipo) e arestas (pavimento, largura, comprimento, confiança, polyline) |
+| `graph_output.graphml` | mesmo grafo em GraphML (abre no Gephi, networkx, etc.) |
 
 ---
 
-## 5. Estrutura de Arquivos da Versao Thick/Tiny
+<a name="avaliacao"></a>
+## 4. Avaliação quantitativa
 
-```
-. (Raiz do Repositorio)
-├── run_thick.py               # Ponto de entrada do pipeline thick/tiny
-├── requirements.txt           # Lista de dependencias do Python
-├── readme.md                  # Este manual de instrucoes
-├── Captura de...003536.png    # Imagem de satelite fornecida para testes
-├── models/                    # Definicao das arquiteturas PyTorch
-│   ├── __init__.py
-│   ├── encoder.py             # Wrapper simplificado do SAM ViT-B
-│   └── ramo_b.py              # Geometry Decoder para mascaras e keypoints
-└── pipeline/                  # Modulos logicos e heuristicas
-    ├── __init__.py
-    ├── bridge_gaps.py         # Algoritmo de conexao de lacunas morfologicas
-    ├── classify.py            # Hysteresis, classificacao HSV, close gaps e stubs
-    └── thick_roads.py         # Motor principal do pipeline thick/tiny
+O harness `eval/` mede precisão/recall/F1 da linha central (buffer de 8 px) e
+métricas topológicas contra o ground truth do dataset local (SpaceNet 3 em
+`../../data`):
+
+```bash
+python eval/run_eval.py --tag atual --modelo atual --limit 12
 ```
 
+Resultados por tile em `eval/results_<tag>.csv`; histórico e análise em
+[`eval/RESULTS.md`](eval/RESULTS.md). Resumo: com o pós-processamento em grafo,
+o F1 sobe de **0.751 para 0.909** sobre o método anterior (mesmo modelo, mesmos
+tiles), com metade dos falsos positivos.
+
+---
+
+<a name="finetune"></a>
+## 5. Fine-tuning dos pesos
+
+A maneira `--modelo finetuned` usa um checkpoint que **você gera** no Google
+Colab a partir do dataset local. O passo a passo completo (preparar o Drive,
+rodar o notebook, trazer o resultado) está em
+[`training/finetune_local.md`](training/finetune_local.md). É o caminho
+recomendado para melhorar a detecção em imagens de satélite escuras e em
+estradas de terra.
+
+> **Status: não executado.** O dataset e o notebook estão prontos, mas o
+> fine-tuning **não foi rodado** por falta de **GPU local** e pelo **limite de
+> ~4 h por sessão do Colab gratuito** (insuficiente para treinar a ViT-B de
+> forma estável). Os resultados deste trabalho usam os pesos pré-treinados; o
+> fine-tuning permanece como trabalho futuro.
+
+---
+
+<a name="estrutura"></a>
+## 6. Estrutura de arquivos
+
+```
+versão_2/
+├── run.py                      # ponto de entrada (as duas maneiras de rodar)
+├── requirements.txt            # dependências Python
+├── README.md                   # este arquivo
+├── ARQUIVOS.md                 # o que cada arquivo faz (documentação detalhada)
+├── models/                     # arquiteturas PyTorch
+│   ├── encoder.py              # encoder SAM ViT-B
+│   └── ramo_b.py               # decoder de geometria (via + cruzamentos)
+├── pipeline/                   # lógica do sistema
+│   ├── thick_roads.py          # orquestrador (inferência + montagem)
+│   ├── context_filter.py       # máscaras de vegetação/água/telhado/solo
+│   ├── graph_refine.py         # grafo: pontes, podas, classes por aresta, desenho
+│   ├── classify.py             # evidência de terra + medição de largura
+│   ├── preprocessing.py        # realce canny_fusion
+│   └── export.py               # JSON + GraphML
+├── eval/                       # avaliação quantitativa
+│   ├── run_eval.py             # P/R/F1 + métricas de grafo
+│   ├── make_val_split.py       # gera o split de validação
+│   ├── val_split.json          # split versionado (10 tiles/cidade)
+│   └── RESULTS.md              # histórico de resultados e análise
+├── training/                   # fine-tuning no Colab
+│   ├── finetune_local.md       # guia passo a passo
+│   ├── colab_finetune.ipynb    # notebook pronto
+│   └── cldice_loss.py          # loss topológica (conectividade)
+├── weights/                    # pesos (baixar e colocar — ver LEIA-ME.md)
+│   └── LEIA-ME.md
+├── latex/                      # documentação acadêmica
+│   ├── relatorio.tex           # relatório completo (artigo)
+│   ├── figuras/                # figuras do relatório (geradas por montar_figuras.py)
+│   └── apresentacao/           # apresentação Beamer (apresentacao_vias.tex) + figuras/
+├── montar_figuras.py          # gera as figuras do relatório e da apresentação
+├── imagens_teste/              # imagens de exemplo
+└── outputs/                    # resultados gerados
+```
+
+### Relatório e apresentação
+
+- **Relatório (artigo):** [`latex/relatorio.tex`](latex/relatorio.tex) — compile
+  com `pdflatex relatorio.tex` (rode 2×). Cobre introdução, revisão
+  bibliográfica, metodologia (os 9 passos), resultados por imagem e limitações.
+- **Apresentação (Beamer):** [`latex/apresentacao/apresentacao_vias.tex`](latex/apresentacao/apresentacao_vias.tex).
+- As figuras de ambos saem de `python montar_figuras.py` (lê `outputs/` e grava
+  em `latex/figuras/` e `latex/apresentacao/figuras/`).
+
+Cada arquivo está documentado individualmente em [`ARQUIVOS.md`](ARQUIVOS.md).

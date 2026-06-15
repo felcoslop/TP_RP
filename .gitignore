@@ -1,18 +1,14 @@
-# Ignorar pesos de modelos pesados
-weights/
-*.ckpt
-*.pth
-*.pt
-
-# Ignorar pastas de resultados gerados e logs
-outputs/
-save/
-lightning_logs/
-*.log
-
-# Ignorar caches do Python e IDEs
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+
+# IDEs
 .vscode/
 .idea/
-.ipynb_checkpoints/
+
+# Local/Agent temp files
+.claude/
+.gemini/
+scratch/

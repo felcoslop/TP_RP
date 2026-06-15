@@ -1,0 +1,149 @@
+\documentclass[12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{subcaption}
+
+\geometry{a4paper, margin=2.5cm}
+\setstretch{1.5}
+
+\title{Reconhecimento de Padrões \\ Relatório -- Reconhecimento Facial na Base Olivetti via PCA e Classificador Bayesiano}
+\author{Aluno: FELIPE COSTA LOPES - 2018039648 \\ Universidade Federal de Minas Gerais (UFMG)}
+\date{2026}
+
+\begin{document}
+
+\maketitle
+
+\section*{Introdução}
+
+Este relatório apresenta os resultados do experimento prático de reconhecimento facial utilizando a base de dados \textit{Olivetti Faces}, disponibilizada pelo pacote \texttt{RnavGraphImageData}. O objetivo central consiste em projetar e avaliar um sistema de extração de características baseado em Análise de Componentes Principais (PCA) implementado de forma manual, seguido por um classificador Bayesiano Gaussiano Multivariado estruturado sob a abordagem \textit{One-vs-All} (Um-contra-Todos). A avaliação do modelo é conduzida de forma estatística através de rodadas estocásticas de validação cruzada.
+
+\section{Parte 1 — Preparação dos Dados}
+
+A base de dados \textit{Olivetti} é composta por imagens frontais de faces de 40 indivíduos distintos, contendo exatamente 10 amostras por indivíduo, totalizando 400 imagens. Cada imagem possui uma resolução original de $64 \times 64$ pixels, dispostos de forma unidimensional nas linhas da matriz de dados, o que resulta em um espaço amostral de altíssima dimensionalidade com $D = 4096$ atributos.
+
+Para a correta execução do algoritmo de extração de características, os dados passaram por um processo de centralização na média através da subtração do centróide populacional atributo a atributo, gerando a matriz centralizada $X_s$:
+
+$$X_s = X - \mathbf{1}\mu^T$$
+
+Onde $\mu \in \mathbb{R}^{4096}$ representa o vetor de médias de cada pixel ao longo de todas as 400 amostras. Como as imagens compartilham a mesma escala nativa de intensidade de cinza, a normalização por variância unitária (\textit{Z-score} completo) não se faz necessária, preservando a variância absoluta dos contrastes locais de iluminação.
+
+\section{Parte 2 — Redução de Dimensionalidade via PCA Manual}
+
+A partir da matriz centralizada $X_s$, a matriz de covariância amostral $S$ de dimensões $4096 \times 4096$ foi calculada manualmente por meio da formulação:
+
+$$S = \frac{1}{N-1} X_s^T X_s$$
+
+A decomposição espectral de $S$ foi realizada via função \texttt{eigen()}, obtendo-se a matriz de autovetores $V$ (\textit{eigenfaces}) e seus respectivos autovalores decrescentes $\lambda$. Os dados estruturais calculados e impressos pelo console a respeito dos cinco primeiros componentes principais são consolidados na Tabela \ref{tab:pca_structure}.
+
+\begin{table}[H]
+\centering
+\caption{Estrutura de variância explicada das top-5 dimensões do PCA.}
+\label{tab:pca_structure}
+\begin{tabular}{@{}cccc@{}}
+\toprule
+\textbf{Componente Principal} & \textbf{Autovalor ($\lambda_i$)} & \textbf{\% Var. Individual} & \textbf{\% Var. Acumulada} \\ \midrule
+PC1 & 1103356.0542 & 23,81\% & 23,81\% \\
+PC2 & 648406.6758  & 13,99\% & 37,80\% \\
+PC3 & 369223.4579  & 7,97\%  & 45,77\% \\
+PC4 & 231596.2631  & 5,00\%  & 50,77\% \\
+PC5 & 167261.2795  & 3,61\%  & 54,38\% \\ \bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Justificativa Teórica para a Escolha da Dimensão $d=4$}
+
+A escolha do número de dimensões reduzidas para alimentar o classificador Bayesiano foi fixada estritamente em $d = 4$ e baseia-se em dois critérios indissociáveis:
+
+\begin{enumerate}
+    \item \textbf{Critério do Cotovelo (Scree Plot):} Conforme observado no gráfico gerado de queda dos autovalores (Figura \ref{fig:autovalores}), há uma acentuada perda de magnitude geométrica até o 4º componente principal, onde a curva começa a se estabilizar. Com $d = 4$, consegue-se capturar a maioria expressiva das variações físicas estruturais das faces (como formato do crânio e posição dos olhos), retendo $50,77\%$ de toda a variância original do espaço de 4096 dimensões (Figura \ref{fig:variancia_acumulada}).
+    
+    \item \textbf{Restrição Amostral Matemática do Classificador:} O projeto do experimento estipula o uso de $50\%$ das amostras para treinamento. Como cada indivíduo possui 10 imagens, a classe alvo dispõe de apenas $N_{treino} = 5$ amostras no conjunto de treino. Para estimar a matriz de covariância amostral $K_i$ de dimensões $d \times d$ para uma classe sem que ela se torne matematicamente singular (determinante igual a zero e impossível de ser invertida), o número de dimensões deve obedecer estritamente à restrição de graus de liberdade:
+    
+    $$d \le N_{treino} - 1 \implies d \le 4$$
+    
+    Portanto, a escolha de $d = 4$ representa o limite superior exato e matematicamente viável para permitir o cálculo da distância de Mahalanobis na função de densidade probabilística gaussiana.
+\end{enumerate}
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{01_Olivetti_Autovalores_Top30.png}
+        \caption{Queda dos Autovalores (Top 30)}
+        \label{fig:autovalores}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{02_Olivetti_Variancia_Acumulada.png}
+        \caption{Variância Acumulada (Top 30)}
+        \label{fig:variancia_acumulada}
+    \end{subfigure}
+    \caption{Análise espectral da matriz de covariância da base Olivetti.}
+\end{figure}
+
+\subsection{Análise da Dispersão das Classes no Espaço 2D}
+
+A projeção bidimensional das amostras pertencentes às três primeiras classes sobre os eixos PC1 e PC2 é exibida na Figura \ref{fig:pca_2d}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{03_Olivetti_PCA_2D_3Classes.png}
+    \caption{Distribuição e dispersão espacial das amostras em 2D para as três primeiras classes.}
+    \label{fig:pca_2d}
+\end{figure}
+
+Por meio da inspeção visual do gráfico de dispersão, constata-se que as amostras das Classes 1 e 2 encontram-se razoavelmente compactadas em suas respectivas regiões latentes. No entanto, o agrupamento pertencente à Classe 3 exibe um espalhamento significativamente maior ao longo do espaço projetado. 
+
+Essa variabilidade intra-classe elevada valida a observação descrita no roteiro: o indivíduo associado à Classe 3 foi fotografado sob condições heterogêneas (mudança de expressões faciais e uso ou ausência de óculos de grau). Tais perturbações alteram drasticamente os valores dos pixels da imagem original, gerando vetores que se distanciam do centróide da classe, desafiando a fronteira de decisão.
+
+\section{Parâmetro 3 — Projeto do Experimento Bayesiano}
+
+O classificador foi modelado como um classificador Bayesiano Gaussiano Multivariado sob uma arquitetura de classificação binária \textit{One-vs-All}. A Classe 1 foi selecionada como a classe de interesse (alvo positivo), enquanto o agrupamento de todas as outras 39 classes restantes (390 amostras) foi rotulado como a classe macro de fundo (alvo negativo).
+
+A densidade de probabilidade conjunta foi calculada a partir da equação gaussiana multidimensional:
+
+$$p(x | \omega_i) = \frac{1}{(2\pi)^{d/2} |K_i|^{1/2}} \exp \left( -\frac{1}{2} (x - m_i)^T K_i^{-1} (x - m_i) \right)$$
+
+Onde $m_i$ representa o vetor de médias amostrais e $K_i$ a matriz de covariância da classe $\omega_i$ no espaço reduzido de dimensão $d=4$. O experimento foi repetido por 10 execuções independentes, realizando partições aleatórias e estratificadas de $50\%$ para treinamento e $50\%$ para teste.
+
+\section{Parte 4 — Análise de Resultados e Conclusão}
+
+Os resultados de acurácia obtidos nas 10 execuções do modelo sobre o conjunto de teste estão discriminados na Tabela \ref{tab:bayes_results}.
+
+\begin{table}[H]
+\centering
+\caption{Taxa de acerto do Classificador Bayesiano Gaussiano ($d = 4$).}
+\label{tab:bayes_results}
+\begin{tabular}{@{}cc@{}}
+\toprule
+\textbf{Execução} & \textbf{Acurácia no Teste (\%)} \\ \midrule
+Execução 01 & 96,50\% \\
+Execução 02 & 97,50\% \\
+Execução 03 & 97,00\% \\
+Execução 04 & 97,50\% \\
+Execução 05 & 96,50\% \\
+Execução 06 & 97,50\% \\
+Execução 07 & 95,00\% \\
+Execução 08 & 97,00\% \\
+Execução 09 & 95,00\% \\
+Execução 10 & 97,00\% \\ \midrule
+\textbf{MÉDIA FINAL} & \textbf{96,65\%} \\
+\textbf{DESVIO PADRÃO} & \textbf{0,94\%} \\ \bottomrule
+\end{tabular}
+\end{table}
+
+O classificador Bayesiano Gaussiano Multivariado operando com apenas 4 dimensões espaciais alcançou uma acurácia média de \textbf{96,65\%} com um desvio padrão extremamente baixo de \textbf{0,94\%}. 
+
+Este desempenho robusto comprova a alta eficiência do algoritmo PCA em compactar as informações fisionômicas mais relevantes nas primeiras diretrizes de variância. Mesmo reduzindo drasticamente o vetor de características de 4096 para apenas 4 componentes principais (uma compressão superior a $99,9\%$), o espaço de hipóteses gerado foi perfeitamente capaz de discriminar o indivíduo alvo das demais faces da base, mitigando a maldição da dimensionalidade e assegurando estabilidade estatística em múltiplas amostragens.
+
+\end{document}

@@ -1,0 +1,18 @@
+\frametitle{Limiares do pipeline (fixos / adaptativos por domínio)}
+\footnotesize Os limiares de \textbf{detecção} são absolutos (iguais para qualquer imagem); o limiar de \textbf{pavimento} é \textbf{adaptado automaticamente} ao domínio detectado --- nunca ajustado à mão por imagem.
+    \vspace{0.1cm}
+    \begin{tabular}{lll}
+        \toprule
+        \textbf{Limiar} & \textbf{Valor} & \textbf{Onde / para quê} \\
+        \midrule
+        \texttt{ROAD\_THRESHOLD} & 0,341 & operating point do modelo \\
+        \texttt{HYST\_HIGH} & 0,30 & semente forte (hysteresis) \\
+        \texttt{HYST\_LOW} & 0,04 & trecho fraco conectado \\
+        \texttt{TERRA\_THR (urbano)} & 0,45 & asfalto $\times$ terra (denso) \\
+        \texttt{TERRA\_THR (rural)} & 0,20 & asfalto $\times$ terra (rural) \\
+        \bottomrule
+    \end{tabular}
+    \vspace{0.1cm}
+    \begin{block}{Regime de sinal fraco (robustez de domínio)}
+        \scriptsize Se a probabilidade máxima fica entre 0,10 e 0,30 (ex.: satélite escuro fora do treino), os limiares viram \textbf{relativos} ($0{,}45\times$ e $0{,}12\times$ o máximo). Abaixo de 0,10, retorna ``sem vias'' (não amplifica ruído).
+    \end{block}

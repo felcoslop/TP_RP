@@ -1,0 +1,864 @@
+{
+  "graph_metadata": {
+    "source_image": "Captura de tela 2026-05-11 202053.png",
+    "n_vertices": 30,
+    "n_edges": 21,
+    "surface_legend": {
+      "1": "asfalto",
+      "2": "terra"
+    }
+  },
+  "vertices": [
+    {
+      "node_id": 0,
+      "x": 337.4,
+      "y": 0.4,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 1,
+      "x": 1165.0,
+      "y": 0.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 3,
+      "x": 1213.5,
+      "y": 0.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 4,
+      "x": 1265.0,
+      "y": 0.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 6,
+      "x": 1369.0,
+      "y": 0.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 10,
+      "x": 1413.7,
+      "y": 0.7,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 13,
+      "x": 1202.7,
+      "y": 21.0,
+      "type": "intersection"
+    },
+    {
+      "node_id": 15,
+      "x": 197.0,
+      "y": 40.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 16,
+      "x": 1235.0,
+      "y": 42.4,
+      "type": "intersection"
+    },
+    {
+      "node_id": 17,
+      "x": 1141.2,
+      "y": 43.0,
+      "type": "intersection"
+    },
+    {
+      "node_id": 18,
+      "x": 194.0,
+      "y": 71.5,
+      "type": "waypoint"
+    },
+    {
+      "node_id": 19,
+      "x": 1304.0,
+      "y": 83.0,
+      "type": "intersection"
+    },
+    {
+      "node_id": 26,
+      "x": 366.7,
+      "y": 153.2,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 29,
+      "x": 1303.8,
+      "y": 188.8,
+      "type": "intersection"
+    },
+    {
+      "node_id": 31,
+      "x": 1238.0,
+      "y": 211.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 32,
+      "x": 1013.0,
+      "y": 252.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 33,
+      "x": 454.0,
+      "y": 284.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 34,
+      "x": 0.0,
+      "y": 322.5,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 35,
+      "x": 1485.0,
+      "y": 322.5,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 36,
+      "x": 1358.0,
+      "y": 365.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 40,
+      "x": 1123.0,
+      "y": 661.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 41,
+      "x": 1217.0,
+      "y": 733.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 42,
+      "x": 250.0,
+      "y": 734.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 43,
+      "x": 629.0,
+      "y": 736.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 44,
+      "x": 1093.0,
+      "y": 736.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 45,
+      "x": 986.5,
+      "y": 737.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 47,
+      "x": 201.0,
+      "y": 0.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 48,
+      "x": 1122.0,
+      "y": 0.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 49,
+      "x": 1485.0,
+      "y": 281.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 50,
+      "x": 755.0,
+      "y": 737.0,
+      "type": "endpoint"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": 3,
+      "source": 1,
+      "target": 13,
+      "surface": "asfalto",
+      "width_px": 10.0,
+      "length_px": 43.9,
+      "confidence": 1.0,
+      "polyline": [
+        [
+          1166.0,
+          0.0
+        ],
+        [
+          1178.0,
+          3.0
+        ],
+        [
+          1186.0,
+          11.0
+        ],
+        [
+          1202.0,
+          19.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 4,
+      "source": 3,
+      "target": 13,
+      "surface": "asfalto",
+      "width_px": 10.8,
+      "length_px": 23.1,
+      "confidence": 1.0,
+      "polyline": [
+        [
+          1213.0,
+          0.0
+        ],
+        [
+          1208.0,
+          5.0
+        ],
+        [
+          1203.0,
+          19.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 6,
+      "source": 4,
+      "target": 16,
+      "surface": "asfalto",
+      "width_px": 10.0,
+      "length_px": 54.8,
+      "confidence": 0.759,
+      "polyline": [
+        [
+          1264.0,
+          0.0
+        ],
+        [
+          1257.0,
+          4.0
+        ],
+        [
+          1235.0,
+          41.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 8,
+      "source": 6,
+      "target": 19,
+      "surface": "asfalto",
+      "width_px": 8.4,
+      "length_px": 111.9,
+      "confidence": 1.0,
+      "polyline": [
+        [
+          1368.0,
+          0.0
+        ],
+        [
+          1360.0,
+          4.0
+        ],
+        [
+          1352.0,
+          19.0
+        ],
+        [
+          1304.0,
+          83.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 15,
+      "source": 13,
+      "target": 17,
+      "surface": "asfalto",
+      "width_px": 10.0,
+      "length_px": 71.5,
+      "confidence": 0.927,
+      "polyline": [
+        [
+          1202.0,
+          23.0
+        ],
+        [
+          1197.0,
+          32.0
+        ],
+        [
+          1183.0,
+          42.0
+        ],
+        [
+          1142.0,
+          43.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 16,
+      "source": 13,
+      "target": 16,
+      "surface": "asfalto",
+      "width_px": 11.2,
+      "length_px": 39.5,
+      "confidence": 1.0,
+      "polyline": [
+        [
+          1203.0,
+          23.0
+        ],
+        [
+          1235.0,
+          41.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 17,
+      "source": 15,
+      "target": 47,
+      "surface": "asfalto",
+      "width_px": 6.0,
+      "length_px": 43.3,
+      "confidence": 0.889,
+      "polyline": [
+        [
+          197.0,
+          40.0
+        ],
+        [
+          195.0,
+          15.0
+        ],
+        [
+          201.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 19,
+      "source": 16,
+      "target": 19,
+      "surface": "asfalto",
+      "width_px": 8.8,
+      "length_px": 84.6,
+      "confidence": 1.0,
+      "polyline": [
+        [
+          1236.0,
+          43.0
+        ],
+        [
+          1271.0,
+          63.0
+        ],
+        [
+          1295.0,
+          81.0
+        ],
+        [
+          1304.0,
+          83.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 20,
+      "source": 17,
+      "target": 48,
+      "surface": "asfalto",
+      "width_px": 10.0,
+      "length_px": 50.5,
+      "confidence": 1.0,
+      "polyline": [
+        [
+          1141.0,
+          42.0
+        ],
+        [
+          1130.0,
+          18.0
+        ],
+        [
+          1129.0,
+          7.0
+        ],
+        [
+          1122.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 21,
+      "source": 17,
+      "target": 32,
+      "surface": "asfalto",
+      "width_px": 8.8,
+      "length_px": 261.0,
+      "confidence": 1.0,
+      "polyline": [
+        [
+          1141.0,
+          44.0
+        ],
+        [
+          1098.0,
+          121.0
+        ],
+        [
+          1013.0,
+          252.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 33,
+      "source": 29,
+      "target": 31,
+      "surface": "asfalto",
+      "width_px": 8.4,
+      "length_px": 73.3,
+      "confidence": 1.0,
+      "polyline": [
+        [
+          1303.0,
+          191.0
+        ],
+        [
+          1238.0,
+          211.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 34,
+      "source": 29,
+      "target": 36,
+      "surface": "asfalto",
+      "width_px": 8.4,
+      "length_px": 196.4,
+      "confidence": 1.0,
+      "polyline": [
+        [
+          1304.0,
+          191.0
+        ],
+        [
+          1358.0,
+          365.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 35,
+      "source": 33,
+      "target": 43,
+      "surface": "asfalto",
+      "width_px": 8.4,
+      "length_px": 721.9,
+      "confidence": 0.904,
+      "polyline": [
+        [
+          454.0,
+          284.0
+        ],
+        [
+          468.0,
+          310.0
+        ],
+        [
+          495.0,
+          346.0
+        ],
+        [
+          619.0,
+          475.0
+        ],
+        [
+          640.0,
+          483.0
+        ],
+        [
+          728.0,
+          489.0
+        ],
+        [
+          739.0,
+          495.0
+        ],
+        [
+          753.0,
+          514.0
+        ],
+        [
+          758.0,
+          544.0
+        ],
+        [
+          758.0,
+          566.0
+        ],
+        [
+          739.0,
+          615.0
+        ],
+        [
+          727.0,
+          632.0
+        ],
+        [
+          706.0,
+          653.0
+        ],
+        [
+          657.0,
+          677.0
+        ],
+        [
+          631.0,
+          693.0
+        ],
+        [
+          619.0,
+          704.0
+        ],
+        [
+          622.0,
+          729.0
+        ],
+        [
+          629.0,
+          736.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 37,
+      "source": 35,
+      "target": 41,
+      "surface": "asfalto",
+      "width_px": 8.4,
+      "length_px": 533.9,
+      "confidence": 0.843,
+      "polyline": [
+        [
+          1485.0,
+          323.0
+        ],
+        [
+          1480.0,
+          336.0
+        ],
+        [
+          1438.0,
+          366.0
+        ],
+        [
+          1384.0,
+          413.0
+        ],
+        [
+          1336.0,
+          459.0
+        ],
+        [
+          1319.0,
+          481.0
+        ],
+        [
+          1240.0,
+          637.0
+        ],
+        [
+          1224.0,
+          684.0
+        ],
+        [
+          1217.0,
+          733.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 39,
+      "source": 40,
+      "target": 44,
+      "surface": "asfalto",
+      "width_px": 4.4,
+      "length_px": 88.0,
+      "confidence": 1.0,
+      "polyline": [
+        [
+          1123.0,
+          661.0
+        ],
+        [
+          1099.0,
+          728.0
+        ],
+        [
+          1093.0,
+          736.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 40,
+      "source": 45,
+      "target": 50,
+      "surface": "asfalto",
+      "width_px": 12.0,
+      "length_px": 236.0,
+      "confidence": 0.535,
+      "polyline": [
+        [
+          986.0,
+          737.0
+        ],
+        [
+          917.0,
+          731.0
+        ],
+        [
+          790.0,
+          731.0
+        ],
+        [
+          755.0,
+          737.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 46,
+      "source": 16,
+      "target": 29,
+      "surface": "asfalto",
+      "width_px": 9.7,
+      "length_px": 249.5,
+      "confidence": 1.0,
+      "polyline": [
+        [
+          1234.0,
+          43.0
+        ],
+        [
+          1202.0,
+          100.0
+        ],
+        [
+          1201.0,
+          116.0
+        ],
+        [
+          1204.0,
+          127.0
+        ],
+        [
+          1213.0,
+          134.0
+        ],
+        [
+          1288.0,
+          132.0
+        ],
+        [
+          1304.0,
+          187.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 47,
+      "source": 29,
+      "target": 49,
+      "surface": "asfalto",
+      "width_px": 8.4,
+      "length_px": 240.1,
+      "confidence": 0.935,
+      "polyline": [
+        [
+          1304.0,
+          187.0
+        ],
+        [
+          1361.0,
+          169.0
+        ],
+        [
+          1372.0,
+          170.0
+        ],
+        [
+          1393.0,
+          193.0
+        ],
+        [
+          1472.0,
+          263.0
+        ],
+        [
+          1482.0,
+          273.0
+        ],
+        [
+          1485.0,
+          281.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 48,
+      "source": 34,
+      "target": 42,
+      "surface": "asfalto",
+      "width_px": 7.3,
+      "length_px": 537.9,
+      "confidence": 0.956,
+      "polyline": [
+        [
+          0.0,
+          323.0
+        ],
+        [
+          4.0,
+          330.0
+        ],
+        [
+          73.0,
+          358.0
+        ],
+        [
+          98.0,
+          387.0
+        ],
+        [
+          122.0,
+          426.0
+        ],
+        [
+          167.0,
+          507.0
+        ],
+        [
+          191.0,
+          541.0
+        ],
+        [
+          208.0,
+          572.0
+        ],
+        [
+          227.0,
+          678.0
+        ],
+        [
+          250.0,
+          734.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 49,
+      "source": 19,
+      "target": 10,
+      "surface": "asfalto",
+      "width_px": 6.1,
+      "length_px": 251.5,
+      "confidence": 0.687,
+      "polyline": [
+        [
+          1304.0,
+          83.0
+        ],
+        [
+          1311.0,
+          93.0
+        ],
+        [
+          1336.0,
+          108.0
+        ],
+        [
+          1346.0,
+          123.0
+        ],
+        [
+          1361.0,
+          127.0
+        ],
+        [
+          1371.0,
+          137.0
+        ],
+        [
+          1382.0,
+          137.0
+        ],
+        [
+          1414.0,
+          4.0
+        ]
+      ],
+      "bridge": true,
+      "bridge_avg_cost": 0.0
+    },
+    {
+      "edge_id": 50,
+      "source": 0,
+      "target": 26,
+      "surface": "asfalto",
+      "width_px": 6.4,
+      "length_px": 161.4,
+      "confidence": 1.0,
+      "polyline": [
+        [
+          338.0,
+          2.0
+        ],
+        [
+          339.0,
+          42.0
+        ],
+        [
+          350.0,
+          101.0
+        ],
+        [
+          351.0,
+          129.0
+        ],
+        [
+          367.0,
+          150.0
+        ]
+      ]
+    }
+  ]
+}

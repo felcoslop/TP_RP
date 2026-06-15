@@ -1,0 +1,1188 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.6.2)  14 JUN 2026 22:48
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./latex/relatorio.tex
+(latex/relatorio.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-12-24>
+
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
+File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count275
+\c@section=\count276
+\c@subsection=\count277
+\c@subsubsection=\count278
+\c@paragraph=\count279
+\c@subparagraph=\count280
+\c@figure=\count281
+\c@table=\count282
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen148
+)
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.st
+y
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+)
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
+)
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.st
+y
+Package: babel 2025/12/11 v25.17 The multilingual framework for LuaLaTeX, pdfLa
+TeX and XeLaTeX
+\babel@savecnt=\count283
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input li
+ne 2068.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input li
+ne 2070.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input lin
+e 2072.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input lin
+e 2073.
+LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) 
+on input line 2074.
+LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) 
+on input line 2076.
+LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) 
+on input line 2101.
+\U@D=\dimen149
+\l@unhyphenated=\language79
+
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel
+.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count284
+Package babel Info: Configuration files are deprecated, as
+(babel)             they can break document portability.
+(babel)             Reported on input line 4196.
+
+*************************************
+* Local config file bblopts.cfg used
+*
+
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cf
+g
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/i
+nvalid\babel-brazil.tex)
+
+Package babel Warning: Name 'brazil' is deprecated.
+(babel)                Use 'brazilian' instead.
+(babel)                Reported on input line 4320.
+
+Package babel Info: Importing font and identification data for brazil
+(babel)             from babel-pt-BR.ini. Reported on input line 4320.
+
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/latex/babel-portuges\b
+razilian.ldf
+Language: portuges 2026/01/24 v1.2u Portuguese support from the babel system
+Package babel Info: Hyphen rules for 'brazil' set to \l@portuguese
+(babel)             (\language56). Reported on input line 100.
+Package babel Info: Making " an active character on input line 132.
+))
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphic
+x.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.
+sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks19
+)
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphic
+s.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.st
+y
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\gra
+phics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdf
+tex.def
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen150
+\Gin@req@width=\dimen151
+)
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.
+sty
+Package: amsmath 2025/07/09 v2.17z AMS math features
+\@mathmargin=\skip51
+
+For additional information on amsmath, use the `?' option.
+
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.
+sty
+Package: amstext 2024/11/17 v2.01 AMS text
+
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.s
+ty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks20
+\ex@=\dimen152
+))
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.s
+ty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen153
+)
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.s
+ty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count285
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count286
+\leftroot@=\count287
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count288
+\DOTSCASE@=\count289
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box53
+\strutbox@=\box54
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen154
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count290
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count291
+\dotsspace@=\muskip17
+\c@parentequation=\count292
+\dspbrk@lvl=\count293
+\tag@help=\toks21
+\row@=\count294
+\column@=\count295
+\maxfields@=\count296
+\andhelp@=\toks22
+\eqnshift@=\dimen155
+\alignsep@=\dimen156
+\tagshift@=\dimen157
+\tagwidth@=\dimen158
+\totwidth@=\dimen159
+\lineht@=\dimen160
+\@envbody=\toks23
+\multlinegap=\skip52
+\multlinetaggap=\skip53
+\mathdisplay@stack=\toks24
+LaTeX Info: Redefining \[ on input line 2950.
+LaTeX Info: Redefining \] on input line 2951.
+)
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometr
+y.sty
+Package: geometry 2026/03/07 v6.0 Page Geometry
+
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.s
+ty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.st
+y
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+))
+\Gm@cnth=\count297
+\Gm@cntv=\count298
+\c@Gm@tempcnt=\count299
+\Gm@bindingoffset=\dimen161
+\Gm@wd@mp=\dimen162
+\Gm@odd@mp=\dimen163
+\Gm@even@mp=\dimen164
+\Gm@layoutwidth=\dimen165
+\Gm@layoutheight=\dimen166
+\Gm@layouthoffset=\dimen167
+\Gm@layoutvoffset=\dimen168
+\Gm@dimlist=\toks25
+
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometr
+y.cfg))
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspac
+e.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+)
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.
+sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3
+.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen169
+\captionmargin=\dimen170
+\caption@leftmargin=\dimen171
+\caption@rightmargin=\dimen172
+\caption@width=\dimen173
+\caption@indent=\dimen174
+\caption@parindent=\dimen175
+\caption@hangindent=\dimen176
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count300
+\c@continuedfloat=\count301
+)
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count302
+\float@exts=\toks26
+\float@box=\box55
+\@float@everytoks=\toks27
+\@floatcapt=\box56
+)
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktab
+s.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen177
+\lightrulewidth=\dimen178
+\cmidrulewidth=\dimen179
+\belowrulesep=\dimen180
+\belowbottomsep=\dimen181
+\aboverulesep=\dimen182
+\abovetopsep=\dimen183
+\cmidrulesep=\dimen184
+\cmidrulekern=\dimen185
+\defaultaddspace=\dimen186
+\@cmidla=\count303
+\@cmidlb=\count304
+\@aboverulesep=\dimen187
+\@belowrulesep=\dimen188
+\@thisruleclass=\count305
+\@lastruleclass=\count306
+\@thisrulewidth=\dimen189
+)
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multiro
+w.sty
+Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
+\multirow@colwidth=\skip54
+\multirow@cntb=\count307
+\multirow@dima=\skip55
+\bigstrutjot=\dimen190
+)
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcapti
+on.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count308
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count309
+)
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.st
+y
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\col
+or.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcol
+or.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+)
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/latex/graphics\dvipsna
+m.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+)
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperre
+f.sty
+Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
+
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetk
+eys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\k
+vdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfe
+scape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmd
+s.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdf
+texcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infw
+arerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+))
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.
+sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref
+.sty
+Package: nameref 2025-06-21 v2.57 Cross-referencing by name of section
+
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcoun
+t.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring
+\gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvopti
+ons.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count310
+)
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbo
+x.sty
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count311
+)
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stri
+ngenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\@linkdim=\dimen191
+\Hy@linkcounter=\count312
+\Hy@pagecounter=\count313
+
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.
+def
+File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcal
+c.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count314
+
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.d
+ef
+File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4195.
+Package hyperref Info: Link nesting OFF on input line 4200.
+Package hyperref Info: Hyper index ON on input line 4203.
+Package hyperref Info: Plain pages OFF on input line 4210.
+Package hyperref Info: Backreferencing OFF on input line 4215.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4462.
+\c@Hy@tempcnt=\count315
+ (C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip18
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4801.
+\XeTeXLinkMargin=\dimen192
+
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.
+sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\big
+intcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count316
+\Field@Width=\dimen193
+\Fld@charsize=\dimen194
+Package hyperref Info: Hyper figures OFF on input line 6078.
+Package hyperref Info: Link nesting OFF on input line 6083.
+Package hyperref Info: Hyper index ON on input line 6086.
+Package hyperref Info: backreferencing OFF on input line 6093.
+Package hyperref Info: Link coloring OFF on input line 6098.
+Package hyperref Info: Link coloring with OCG OFF on input line 6103.
+Package hyperref Info: PDF/A mode OFF on input line 6108.
+\Hy@abspage=\count317
+\c@Item=\count318
+\c@Hfootnote=\count319
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex
+.def
+File: hpdftex.def 2025-07-12 v7.01o Hyperref driver for pdfTeX
+\Fld@listcount=\count320
+\c@bookmark@seq@number=\count321
+
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\r
+erunfilecheck.sty
+Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
+
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\
+uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+84.
+)
+\Hy@SectionHShift=\skip56
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 17.
+
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3back
+end-pdftex.def
+File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count322
+)
+(C:\Users\Felipe Costa\Downloads\BACKUP\Downloads\TP_RP_2026_1\versão_2\latex\
+relatorio.aux
+Package babel Info: 'brazil' activates 'portuges' shorthands.
+(babel)             Reported on input line 8.
+)
+\openout1 = `relatorio.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp
+-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count323
+\scratchdimen=\dimen195
+\scratchbox=\box57
+\nofMPsegments=\count324
+\nofMParguments=\count325
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count326
+\MPscratchDim=\dimen196
+\MPnumerator=\count327
+\makeMPintoPDFobject=\count328
+\everyMPtoPDFconversion=\toks29
+)
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\eps
+topdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:\Users\Felipe Costa\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopd
+f-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=702.78308pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-38.1381pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
+Package hyperref Info: Link coloring ON on input line 27.
+
+(C:\Users\Felipe Costa\Downloads\BACKUP\Downloads\TP_RP_2026_1\versão_2\latex\
+relatorio.out)
+(C:\Users\Felipe Costa\Downloads\BACKUP\Downloads\TP_RP_2026_1\versão_2\latex\
+relatorio.out)
+\@outlinefile=\write3
+\openout3 = `relatorio.out'.
+
+ [1
+
+{C:/Users/Felipe Costa/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
+<figuras/dataset_exemplo.png, id=90, 1003.75pt x 246.9225pt>
+File: figuras/dataset_exemplo.png Graphic file (type png)
+<use figuras/dataset_exemplo.png>
+Package pdftex.def Info: figuras/dataset_exemplo.png  used on input line 115.
+(pdftex.def)             Requested size: 455.24411pt x 111.99196pt.
+ [3 <C:/Users/Felipe Costa/Downloads/BACKUP/Downloads/TP_RP_2026_1/versão_2/la
+tex/figuras/dataset_exemplo.png (PNG copy)>]
+<figuras/passo_1.png, id=104, 1003.75pt x 620.3175pt>
+File: figuras/passo_1.png Graphic file (type png)
+<use figuras/passo_1.png>
+Package pdftex.def Info: figuras/passo_1.png  used on input line 159.
+(pdftex.def)             Requested size: 145.68144pt x 90.02419pt.
+<figuras/passo_2.png, id=105, 1003.75pt x 620.3175pt>
+File: figuras/passo_2.png Graphic file (type png)
+<use figuras/passo_2.png>
+Package pdftex.def Info: figuras/passo_2.png  used on input line 162.
+(pdftex.def)             Requested size: 145.68144pt x 90.02419pt.
+<figuras/passo_3.png, id=106, 1003.75pt x 620.3175pt>
+File: figuras/passo_3.png Graphic file (type png)
+<use figuras/passo_3.png>
+Package pdftex.def Info: figuras/passo_3.png  used on input line 165.
+(pdftex.def)             Requested size: 145.68144pt x 90.02419pt.
+ [4 <C:/Users/Felipe Costa/Downloads/BACKUP/Downloads/TP_RP_2026_1/versão_2/la
+tex/figuras/passo_1.png (PNG copy)> <C:/Users/Felipe Costa/Downloads/BACKUP/Dow
+nloads/TP_RP_2026_1/versão_2/latex/figuras/passo_2.png (PNG copy)> <C:/Users/F
+elipe Costa/Downloads/BACKUP/Downloads/TP_RP_2026_1/versão_2/latex/figuras/pas
+so_3.png (PNG copy)>] [5] [6]
+<figuras/passo_4.png, id=123, 1003.75pt x 620.3175pt>
+File: figuras/passo_4.png Graphic file (type png)
+<use figuras/passo_4.png>
+Package pdftex.def Info: figuras/passo_4.png  used on input line 231.
+(pdftex.def)             Requested size: 145.68144pt x 90.02419pt.
+<figuras/passo_6.png, id=124, 1003.75pt x 620.3175pt>
+File: figuras/passo_6.png Graphic file (type png)
+<use figuras/passo_6.png>
+Package pdftex.def Info: figuras/passo_6.png  used on input line 234.
+(pdftex.def)             Requested size: 145.68144pt x 90.02419pt.
+<figuras/passo_7.png, id=125, 1003.75pt x 620.3175pt>
+File: figuras/passo_7.png Graphic file (type png)
+<use figuras/passo_7.png>
+Package pdftex.def Info: figuras/passo_7.png  used on input line 237.
+(pdftex.def)             Requested size: 145.68144pt x 90.02419pt.
+ [7 <C:/Users/Felipe Costa/Downloads/BACKUP/Downloads/TP_RP_2026_1/versão_2/la
+tex/figuras/passo_4.png (PNG copy)> <C:/Users/Felipe Costa/Downloads/BACKUP/Dow
+nloads/TP_RP_2026_1/versão_2/latex/figuras/passo_6.png (PNG copy)> <C:/Users/F
+elipe Costa/Downloads/BACKUP/Downloads/TP_RP_2026_1/versão_2/latex/figuras/pas
+so_7.png (PNG copy)>] [8]
+<figuras/passo_8.png, id=141, 1003.75pt x 620.3175pt>
+File: figuras/passo_8.png Graphic file (type png)
+<use figuras/passo_8.png>
+Package pdftex.def Info: figuras/passo_8.png  used on input line 277.
+(pdftex.def)             Requested size: 218.51521pt x 135.04102pt.
+<figuras/passo_9.png, id=142, 1003.75pt x 620.3175pt>
+File: figuras/passo_9.png Graphic file (type png)
+<use figuras/passo_9.png>
+Package pdftex.def Info: figuras/passo_9.png  used on input line 280.
+(pdftex.def)             Requested size: 218.51521pt x 135.04102pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 311--311
+[]\T1/cmr/m/n/10 Urbano
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 312--312
+[]\T1/cmr/m/n/10 Favela
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 316--316
+[]\T1/cmr/m/n/10 Favela
+ []
+
+[9 <C:/Users/Felipe Costa/Downloads/BACKUP/Downloads/TP_RP_2026_1/versão_2/lat
+ex/figuras/passo_8.png (PNG copy)> <C:/Users/Felipe Costa/Downloads/BACKUP/Down
+loads/TP_RP_2026_1/versão_2/latex/figuras/passo_9.png (PNG copy)>]
+<figuras/2026-06-12_135241_passo_1.png, id=151, 1003.75pt x 620.3175pt>
+File: figuras/2026-06-12_135241_passo_1.png Graphic file (type png)
+<use figuras/2026-06-12_135241_passo_1.png>
+Package pdftex.def Info: figuras/2026-06-12_135241_passo_1.png  used on input l
+ine 324.
+(pdftex.def)             Requested size: 109.26108pt x 67.51576pt.
+<figuras/2026-06-12_135241_passo_2.png, id=152, 1003.75pt x 620.3175pt>
+File: figuras/2026-06-12_135241_passo_2.png Graphic file (type png)
+<use figuras/2026-06-12_135241_passo_2.png>
+Package pdftex.def Info: figuras/2026-06-12_135241_passo_2.png  used on input l
+ine 328.
+(pdftex.def)             Requested size: 109.26108pt x 67.51576pt.
+<figuras/2026-06-12_135241_passo_3.png, id=153, 1003.75pt x 620.3175pt>
+File: figuras/2026-06-12_135241_passo_3.png Graphic file (type png)
+<use figuras/2026-06-12_135241_passo_3.png>
+Package pdftex.def Info: figuras/2026-06-12_135241_passo_3.png  used on input l
+ine 332.
+(pdftex.def)             Requested size: 109.26108pt x 67.51576pt.
+<figuras/2026-06-12_135241_passo_4.png, id=154, 1003.75pt x 620.3175pt>
+File: figuras/2026-06-12_135241_passo_4.png Graphic file (type png)
+<use figuras/2026-06-12_135241_passo_4.png>
+Package pdftex.def Info: figuras/2026-06-12_135241_passo_4.png  used on input l
+ine 336.
+(pdftex.def)             Requested size: 109.26108pt x 67.51576pt.
+<figuras/2026-06-12_135241_passo_5.png, id=155, 1003.75pt x 620.3175pt>
+File: figuras/2026-06-12_135241_passo_5.png Graphic file (type png)
+<use figuras/2026-06-12_135241_passo_5.png>
+Package pdftex.def Info: figuras/2026-06-12_135241_passo_5.png  used on input l
+ine 342.
+(pdftex.def)             Requested size: 109.26108pt x 67.51576pt.
+<figuras/2026-06-12_135241_passo_6.png, id=156, 1003.75pt x 620.3175pt>
+File: figuras/2026-06-12_135241_passo_6.png Graphic file (type png)
+<use figuras/2026-06-12_135241_passo_6.png>
+Package pdftex.def Info: figuras/2026-06-12_135241_passo_6.png  used on input l
+ine 346.
+(pdftex.def)             Requested size: 109.26108pt x 67.51576pt.
+<figuras/2026-06-12_135241_passo_7.png, id=157, 1003.75pt x 620.3175pt>
+File: figuras/2026-06-12_135241_passo_7.png Graphic file (type png)
+<use figuras/2026-06-12_135241_passo_7.png>
+Package pdftex.def Info: figuras/2026-06-12_135241_passo_7.png  used on input l
+ine 350.
+(pdftex.def)             Requested size: 109.26108pt x 67.51576pt.
+<figuras/2026-06-12_135241_passo_8.png, id=158, 1003.75pt x 620.3175pt>
+File: figuras/2026-06-12_135241_passo_8.png Graphic file (type png)
+<use figuras/2026-06-12_135241_passo_8.png>
+Package pdftex.def Info: figuras/2026-06-12_135241_passo_8.png  used on input l
+ine 354.
+(pdftex.def)             Requested size: 109.26108pt x 67.51576pt.
+<figuras/2026-06-12_135241_passo_9.png, id=159, 1003.75pt x 620.3175pt>
+File: figuras/2026-06-12_135241_passo_9.png Graphic file (type png)
+<use figuras/2026-06-12_135241_passo_9.png>
+Package pdftex.def Info: figuras/2026-06-12_135241_passo_9.png  used on input l
+ine 360.
+(pdftex.def)             Requested size: 364.19667pt x 225.07468pt.
+ [10]
+<figuras/2026-05-12_003536_passo_1.png, id=169, 1003.75pt x 384.43625pt>
+File: figuras/2026-05-12_003536_passo_1.png Graphic file (type png)
+<use figuras/2026-05-12_003536_passo_1.png>
+Package pdftex.def Info: figuras/2026-05-12_003536_passo_1.png  used on input l
+ine 370.
+(pdftex.def)             Requested size: 109.26108pt x 41.8423pt.
+<figuras/2026-05-12_003536_passo_2.png, id=170, 1003.75pt x 384.43625pt>
+File: figuras/2026-05-12_003536_passo_2.png Graphic file (type png)
+<use figuras/2026-05-12_003536_passo_2.png>
+Package pdftex.def Info: figuras/2026-05-12_003536_passo_2.png  used on input l
+ine 374.
+(pdftex.def)             Requested size: 109.26108pt x 41.8423pt.
+<figuras/2026-05-12_003536_passo_3.png, id=171, 1003.75pt x 384.43625pt>
+File: figuras/2026-05-12_003536_passo_3.png Graphic file (type png)
+<use figuras/2026-05-12_003536_passo_3.png>
+Package pdftex.def Info: figuras/2026-05-12_003536_passo_3.png  used on input l
+ine 378.
+(pdftex.def)             Requested size: 109.26108pt x 41.8423pt.
+<figuras/2026-05-12_003536_passo_4.png, id=172, 1003.75pt x 384.43625pt>
+File: figuras/2026-05-12_003536_passo_4.png Graphic file (type png)
+<use figuras/2026-05-12_003536_passo_4.png>
+Package pdftex.def Info: figuras/2026-05-12_003536_passo_4.png  used on input l
+ine 382.
+(pdftex.def)             Requested size: 109.26108pt x 41.8423pt.
+<figuras/2026-05-12_003536_passo_5.png, id=173, 1003.75pt x 384.43625pt>
+File: figuras/2026-05-12_003536_passo_5.png Graphic file (type png)
+<use figuras/2026-05-12_003536_passo_5.png>
+Package pdftex.def Info: figuras/2026-05-12_003536_passo_5.png  used on input l
+ine 388.
+(pdftex.def)             Requested size: 109.26108pt x 41.8423pt.
+<figuras/2026-05-12_003536_passo_6.png, id=174, 1003.75pt x 384.43625pt>
+File: figuras/2026-05-12_003536_passo_6.png Graphic file (type png)
+<use figuras/2026-05-12_003536_passo_6.png>
+Package pdftex.def Info: figuras/2026-05-12_003536_passo_6.png  used on input l
+ine 392.
+(pdftex.def)             Requested size: 109.26108pt x 41.8423pt.
+<figuras/2026-05-12_003536_passo_7.png, id=175, 1003.75pt x 384.43625pt>
+File: figuras/2026-05-12_003536_passo_7.png Graphic file (type png)
+<use figuras/2026-05-12_003536_passo_7.png>
+Package pdftex.def Info: figuras/2026-05-12_003536_passo_7.png  used on input l
+ine 396.
+(pdftex.def)             Requested size: 109.26108pt x 41.8423pt.
+<figuras/2026-05-12_003536_passo_8.png, id=176, 1003.75pt x 384.43625pt>
+File: figuras/2026-05-12_003536_passo_8.png Graphic file (type png)
+<use figuras/2026-05-12_003536_passo_8.png>
+Package pdftex.def Info: figuras/2026-05-12_003536_passo_8.png  used on input l
+ine 400.
+(pdftex.def)             Requested size: 109.26108pt x 41.8423pt.
+<figuras/2026-05-12_003536_passo_9.png, id=177, 1003.75pt x 384.43625pt>
+File: figuras/2026-05-12_003536_passo_9.png Graphic file (type png)
+<use figuras/2026-05-12_003536_passo_9.png>
+Package pdftex.def Info: figuras/2026-05-12_003536_passo_9.png  used on input l
+ine 406.
+(pdftex.def)             Requested size: 364.19667pt x 139.48802pt.
+
+[11 <C:/Users/Felipe Costa/Downloads/BACKUP/Downloads/TP_RP_2026_1/versão_2/la
+tex/figuras/2026-06-12_135241_passo_1.png (PNG copy)> <C:/Users/Felipe Costa/Do
+wnloads/BACKUP/Downloads/TP_RP_2026_1/versão_2/latex/figuras/2026-06-12_135241
+_passo_2.png (PNG copy)> <C:/Users/Felipe Costa/Downloads/BACKUP/Downloads/TP_R
+P_2026_1/versão_2/latex/figuras/2026-06-12_135241_passo_3.png (PNG copy)> <C:/
+Users/Felipe Costa/Downloads/BACKUP/Downloads/TP_RP_2026_1/versão_2/latex/figu
+ras/2026-06-12_135241_passo_4.png (PNG copy)> <C:/Users/Felipe Costa/Downloads/
+BACKUP/Downloads/TP_RP_2026_1/versão_2/latex/figuras/2026-06-12_135241_passo_5
+.png (PNG copy)> <C:/Users/Felipe Costa/Downloads/BACKUP/Downloads/TP_RP_2026_1
+/versão_2/latex/figuras/2026-06-12_135241_passo_6.png (PNG copy)> <C:/Users/Fe
+lipe Costa/Downloads/BACKUP/Downloads/TP_RP_2026_1/versão_2/latex/figuras/2026
+-06-12_135241_passo_7.png (PNG copy)> <C:/Users/Felipe Costa/Downloads/BACKUP/D
+ownloads/TP_RP_2026_1/versão_2/latex/figuras/2026-06-12_135241_passo_8.png (PN
+G copy)> <C:/Users/Felipe Costa/Downloads/BACKUP/Downloads/TP_RP_2026_1/versão
+_2/latex/figuras/2026-06-12_135241_passo_9.png (PNG copy)>]
+<figuras/2026-05-12_151237_passo_1.png, id=182, 1003.75pt x 704.6325pt>
+File: figuras/2026-05-12_151237_passo_1.png Graphic file (type png)
+<use figuras/2026-05-12_151237_passo_1.png>
+Package pdftex.def Info: figuras/2026-05-12_151237_passo_1.png  used on input l
+ine 416.
+(pdftex.def)             Requested size: 109.26108pt x 76.69267pt.
+<figuras/2026-05-12_151237_passo_2.png, id=183, 1003.75pt x 704.6325pt>
+File: figuras/2026-05-12_151237_passo_2.png Graphic file (type png)
+<use figuras/2026-05-12_151237_passo_2.png>
+Package pdftex.def Info: figuras/2026-05-12_151237_passo_2.png  used on input l
+ine 420.
+(pdftex.def)             Requested size: 109.26108pt x 76.69267pt.
+<figuras/2026-05-12_151237_passo_3.png, id=184, 1003.75pt x 704.6325pt>
+File: figuras/2026-05-12_151237_passo_3.png Graphic file (type png)
+<use figuras/2026-05-12_151237_passo_3.png>
+Package pdftex.def Info: figuras/2026-05-12_151237_passo_3.png  used on input l
+ine 424.
+(pdftex.def)             Requested size: 109.26108pt x 76.69267pt.
+<figuras/2026-05-12_151237_passo_4.png, id=185, 1003.75pt x 704.6325pt>
+File: figuras/2026-05-12_151237_passo_4.png Graphic file (type png)
+<use figuras/2026-05-12_151237_passo_4.png>
+Package pdftex.def Info: figuras/2026-05-12_151237_passo_4.png  used on input l
+ine 428.
+(pdftex.def)             Requested size: 109.26108pt x 76.69267pt.
+<figuras/2026-05-12_151237_passo_5.png, id=186, 1003.75pt x 704.6325pt>
+File: figuras/2026-05-12_151237_passo_5.png Graphic file (type png)
+<use figuras/2026-05-12_151237_passo_5.png>
+Package pdftex.def Info: figuras/2026-05-12_151237_passo_5.png  used on input l
+ine 434.
+(pdftex.def)             Requested size: 109.26108pt x 76.69267pt.
+<figuras/2026-05-12_151237_passo_6.png, id=187, 1003.75pt x 704.6325pt>
+File: figuras/2026-05-12_151237_passo_6.png Graphic file (type png)
+<use figuras/2026-05-12_151237_passo_6.png>
+Package pdftex.def Info: figuras/2026-05-12_151237_passo_6.png  used on input l
+ine 438.
+(pdftex.def)             Requested size: 109.26108pt x 76.69267pt.
+<figuras/2026-05-12_151237_passo_7.png, id=188, 1003.75pt x 704.6325pt>
+File: figuras/2026-05-12_151237_passo_7.png Graphic file (type png)
+<use figuras/2026-05-12_151237_passo_7.png>
+Package pdftex.def Info: figuras/2026-05-12_151237_passo_7.png  used on input l
+ine 442.
+(pdftex.def)             Requested size: 109.26108pt x 76.69267pt.
+<figuras/2026-05-12_151237_passo_8.png, id=189, 1003.75pt x 704.6325pt>
+File: figuras/2026-05-12_151237_passo_8.png Graphic file (type png)
+<use figuras/2026-05-12_151237_passo_8.png>
+Package pdftex.def Info: figuras/2026-05-12_151237_passo_8.png  used on input l
+ine 446.
+(pdftex.def)             Requested size: 109.26108pt x 76.69267pt.
+<figuras/2026-05-12_151237_passo_9.png, id=190, 1003.75pt x 704.6325pt>
+File: figuras/2026-05-12_151237_passo_9.png Graphic file (type png)
+<use figuras/2026-05-12_151237_passo_9.png>
+Package pdftex.def Info: figuras/2026-05-12_151237_passo_9.png  used on input l
+ine 452.
+(pdftex.def)             Requested size: 364.19667pt x 255.66734pt.
+ [12 <C:/Users/Felipe Costa/Downloads/BACKUP/Downloads/TP_RP_2026_1/versão_2/l
+atex/figuras/2026-05-12_003536_passo_1.png (PNG copy)> <C:/Users/Felipe Costa/D
+ownloads/BACKUP/Downloads/TP_RP_2026_1/versão_2/latex/figuras/2026-05-12_00353
+6_passo_2.png (PNG copy)> <C:/Users/Felipe Costa/Downloads/BACKUP/Downloads/TP_
+RP_2026_1/versão_2/latex/figuras/2026-05-12_003536_passo_3.png (PNG copy)> <C:
+/Users/Felipe Costa/Downloads/BACKUP/Downloads/TP_RP_2026_1/versão_2/latex/fig
+uras/2026-05-12_003536_passo_4.png (PNG copy)> <C:/Users/Felipe Costa/Downloads
+/BACKUP/Downloads/TP_RP_2026_1/versão_2/latex/figuras/2026-05-12_003536_passo_
+5.png (PNG copy)> <C:/Users/Felipe Costa/Downloads/BACKUP/Downloads/TP_RP_2026_
+1/versão_2/latex/figuras/2026-05-12_003536_passo_6.png (PNG copy)> <C:/Users/F
+elipe Costa/Downloads/BACKUP/Downloads/TP_RP_2026_1/versão_2/latex/figuras/202
+6-05-12_003536_passo_7.png (PNG copy)> <C:/Users/Felipe Costa/Downloads/BACKUP/
+Downloads/TP_RP_2026_1/versão_2/latex/figuras/2026-05-12_003536_passo_8.png (P
+NG copy)> <C:/Users/Felipe Costa/Downloads/BACKUP/Downloads/TP_RP_2026_1/versã
+o_2/latex/figuras/2026-05-12_003536_passo_9.png (PNG copy)>]
+<figuras/2026-05-13_020059_passo_1.png, id=196, 1003.75pt x 608.2725pt>
+File: figuras/2026-05-13_020059_passo_1.png Graphic file (type png)
+<use figuras/2026-05-13_020059_passo_1.png>
+Package pdftex.def Info: figuras/2026-05-13_020059_passo_1.png  used on input l
+ine 462.
+(pdftex.def)             Requested size: 109.26108pt x 66.20479pt.
+<figuras/2026-05-13_020059_passo_2.png, id=197, 1003.75pt x 608.2725pt>
+File: figuras/2026-05-13_020059_passo_2.png Graphic file (type png)
+<use figuras/2026-05-13_020059_passo_2.png>
+Package pdftex.def Info: figuras/2026-05-13_020059_passo_2.png  used on input l
+ine 466.
+(pdftex.def)             Requested size: 109.26108pt x 66.20479pt.
+<figuras/2026-05-13_020059_passo_3.png, id=198, 1003.75pt x 608.2725pt>
+File: figuras/2026-05-13_020059_passo_3.png Graphic file (type png)
+<use figuras/2026-05-13_020059_passo_3.png>
+Package pdftex.def Info: figuras/2026-05-13_020059_passo_3.png  used on input l
+ine 470.
+(pdftex.def)             Requested size: 109.26108pt x 66.20479pt.
+<figuras/2026-05-13_020059_passo_4.png, id=199, 1003.75pt x 608.2725pt>
+File: figuras/2026-05-13_020059_passo_4.png Graphic file (type png)
+<use figuras/2026-05-13_020059_passo_4.png>
+Package pdftex.def Info: figuras/2026-05-13_020059_passo_4.png  used on input l
+ine 474.
+(pdftex.def)             Requested size: 109.26108pt x 66.20479pt.
+<figuras/2026-05-13_020059_passo_5.png, id=200, 1003.75pt x 608.2725pt>
+File: figuras/2026-05-13_020059_passo_5.png Graphic file (type png)
+<use figuras/2026-05-13_020059_passo_5.png>
+Package pdftex.def Info: figuras/2026-05-13_020059_passo_5.png  used on input l
+ine 480.
+(pdftex.def)             Requested size: 109.26108pt x 66.20479pt.
+<figuras/2026-05-13_020059_passo_6.png, id=201, 1003.75pt x 608.2725pt>
+File: figuras/2026-05-13_020059_passo_6.png Graphic file (type png)
+<use figuras/2026-05-13_020059_passo_6.png>
+Package pdftex.def Info: figuras/2026-05-13_020059_passo_6.png  used on input l
+ine 484.
+(pdftex.def)             Requested size: 109.26108pt x 66.20479pt.
+<figuras/2026-05-13_020059_passo_7.png, id=202, 1003.75pt x 608.2725pt>
+File: figuras/2026-05-13_020059_passo_7.png Graphic file (type png)
+<use figuras/2026-05-13_020059_passo_7.png>
+Package pdftex.def Info: figuras/2026-05-13_020059_passo_7.png  used on input l
+ine 488.
+(pdftex.def)             Requested size: 109.26108pt x 66.20479pt.
+<figuras/2026-05-13_020059_passo_8.png, id=203, 1003.75pt x 608.2725pt>
+File: figuras/2026-05-13_020059_passo_8.png Graphic file (type png)
+<use figuras/2026-05-13_020059_passo_8.png>
+Package pdftex.def Info: figuras/2026-05-13_020059_passo_8.png  used on input l
+ine 492.
+(pdftex.def)             Requested size: 109.26108pt x 66.20479pt.
+<figuras/2026-05-13_020059_passo_9.png, id=204, 1003.75pt x 608.2725pt>
+File: figuras/2026-05-13_020059_passo_9.png Graphic file (type png)
+<use figuras/2026-05-13_020059_passo_9.png>
+Package pdftex.def Info: figuras/2026-05-13_020059_passo_9.png  used on input l
+ine 498.
+(pdftex.def)             Requested size: 364.19667pt x 220.70428pt.
+ [13 <C:/Users/Felipe Costa/Downloads/BACKUP/Downloads/TP_RP_2026_1/versão_2/l
+atex/figuras/2026-05-12_151237_passo_1.png (PNG copy)> <C:/Users/Felipe Costa/D
+ownloads/BACKUP/Downloads/TP_RP_2026_1/versão_2/latex/figuras/2026-05-12_15123
+7_passo_2.png (PNG copy)> <C:/Users/Felipe Costa/Downloads/BACKUP/Downloads/TP_
+RP_2026_1/versão_2/latex/figuras/2026-05-12_151237_passo_3.png (PNG copy)> <C:
+/Users/Felipe Costa/Downloads/BACKUP/Downloads/TP_RP_2026_1/versão_2/latex/fig
+uras/2026-05-12_151237_passo_4.png (PNG copy)> <C:/Users/Felipe Costa/Downloads
+/BACKUP/Downloads/TP_RP_2026_1/versão_2/latex/figuras/2026-05-12_151237_passo_
+5.png (PNG copy)> <C:/Users/Felipe Costa/Downloads/BACKUP/Downloads/TP_RP_2026_
+1/versão_2/latex/figuras/2026-05-12_151237_passo_6.png (PNG copy)> <C:/Users/F
+elipe Costa/Downloads/BACKUP/Downloads/TP_RP_2026_1/versão_2/latex/figuras/202
+6-05-12_151237_passo_7.png (PNG copy)> <C:/Users/Felipe Costa/Downloads/BACKUP/
+Downloads/TP_RP_2026_1/versão_2/latex/figuras/2026-05-12_151237_passo_8.png (P
+NG copy)> <C:/Users/Felipe Costa/Downloads/BACKUP/Downloads/TP_RP_2026_1/versã
+o_2/latex/figuras/2026-05-12_151237_passo_9.png (PNG copy)>]
+<figuras/2026-05-16_165358_passo_1.png, id=211, 1003.75pt x 466.74374pt>
+File: figuras/2026-05-16_165358_passo_1.png Graphic file (type png)
+<use figuras/2026-05-16_165358_passo_1.png>
+Package pdftex.def Info: figuras/2026-05-16_165358_passo_1.png  used on input l
+ine 508.
+(pdftex.def)             Requested size: 109.26108pt x 50.80069pt.
+<figuras/2026-05-16_165358_passo_2.png, id=212, 1003.75pt x 466.74374pt>
+File: figuras/2026-05-16_165358_passo_2.png Graphic file (type png)
+<use figuras/2026-05-16_165358_passo_2.png>
+Package pdftex.def Info: figuras/2026-05-16_165358_passo_2.png  used on input l
+ine 512.
+(pdftex.def)             Requested size: 109.26108pt x 50.80069pt.
+<figuras/2026-05-16_165358_passo_3.png, id=213, 1003.75pt x 466.74374pt>
+File: figuras/2026-05-16_165358_passo_3.png Graphic file (type png)
+<use figuras/2026-05-16_165358_passo_3.png>
+Package pdftex.def Info: figuras/2026-05-16_165358_passo_3.png  used on input l
+ine 516.
+(pdftex.def)             Requested size: 109.26108pt x 50.80069pt.
+<figuras/2026-05-16_165358_passo_4.png, id=214, 1003.75pt x 466.74374pt>
+File: figuras/2026-05-16_165358_passo_4.png Graphic file (type png)
+<use figuras/2026-05-16_165358_passo_4.png>
+Package pdftex.def Info: figuras/2026-05-16_165358_passo_4.png  used on input l
+ine 520.
+(pdftex.def)             Requested size: 109.26108pt x 50.80069pt.
+<figuras/2026-05-16_165358_passo_5.png, id=215, 1003.75pt x 466.74374pt>
+File: figuras/2026-05-16_165358_passo_5.png Graphic file (type png)
+<use figuras/2026-05-16_165358_passo_5.png>
+Package pdftex.def Info: figuras/2026-05-16_165358_passo_5.png  used on input l
+ine 526.
+(pdftex.def)             Requested size: 109.26108pt x 50.80069pt.
+<figuras/2026-05-16_165358_passo_6.png, id=216, 1003.75pt x 466.74374pt>
+File: figuras/2026-05-16_165358_passo_6.png Graphic file (type png)
+<use figuras/2026-05-16_165358_passo_6.png>
+Package pdftex.def Info: figuras/2026-05-16_165358_passo_6.png  used on input l
+ine 530.
+(pdftex.def)             Requested size: 109.26108pt x 50.80069pt.
+<figuras/2026-05-16_165358_passo_7.png, id=217, 1003.75pt x 466.74374pt>
+File: figuras/2026-05-16_165358_passo_7.png Graphic file (type png)
+<use figuras/2026-05-16_165358_passo_7.png>
+Package pdftex.def Info: figuras/2026-05-16_165358_passo_7.png  used on input l
+ine 534.
+(pdftex.def)             Requested size: 109.26108pt x 50.80069pt.
+<figuras/2026-05-16_165358_passo_8.png, id=218, 1003.75pt x 466.74374pt>
+File: figuras/2026-05-16_165358_passo_8.png Graphic file (type png)
+<use figuras/2026-05-16_165358_passo_8.png>
+Package pdftex.def Info: figuras/2026-05-16_165358_passo_8.png  used on input l
+ine 538.
+(pdftex.def)             Requested size: 109.26108pt x 50.80069pt.
+<figuras/2026-05-16_165358_passo_9.png, id=219, 1003.75pt x 466.74374pt>
+File: figuras/2026-05-16_165358_passo_9.png Graphic file (type png)
+<use figuras/2026-05-16_165358_passo_9.png>
+Package pdftex.def Info: figuras/2026-05-16_165358_passo_9.png  used on input l
+ine 544.
+(pdftex.def)             Requested size: 364.19667pt x 169.3523pt.
+ [14 <C:/Users/Felipe Costa/Downloads/BACKUP/Downloads/TP_RP_2026_1/versão_2/l
+atex/figuras/2026-05-13_020059_passo_1.png (PNG copy)> <C:/Users/Felipe Costa/D
+ownloads/BACKUP/Downloads/TP_RP_2026_1/versão_2/latex/figuras/2026-05-13_02005
+9_passo_2.png (PNG copy)> <C:/Users/Felipe Costa/Downloads/BACKUP/Downloads/TP_
+RP_2026_1/versão_2/latex/figuras/2026-05-13_020059_passo_3.png (PNG copy)> <C:
+/Users/Felipe Costa/Downloads/BACKUP/Downloads/TP_RP_2026_1/versão_2/latex/fig
+uras/2026-05-13_020059_passo_4.png (PNG copy)> <C:/Users/Felipe Costa/Downloads
+/BACKUP/Downloads/TP_RP_2026_1/versão_2/latex/figuras/2026-05-13_020059_passo_
+5.png (PNG copy)> <C:/Users/Felipe Costa/Downloads/BACKUP/Downloads/TP_RP_2026_
+1/versão_2/latex/figuras/2026-05-13_020059_passo_6.png (PNG copy)> <C:/Users/F
+elipe Costa/Downloads/BACKUP/Downloads/TP_RP_2026_1/versão_2/latex/figuras/202
+6-05-13_020059_passo_7.png (PNG copy)> <C:/Users/Felipe Costa/Downloads/BACKUP/
+Downloads/TP_RP_2026_1/versão_2/latex/figuras/2026-05-13_020059_passo_8.png (P
+NG copy)> <C:/Users/Felipe Costa/Downloads/BACKUP/Downloads/TP_RP_2026_1/versã
+o_2/latex/figuras/2026-05-13_020059_passo_9.png (PNG copy)>]
+<figuras/2026-05-11_202053_passo_1.png, id=225, 1003.75pt x 497.86pt>
+File: figuras/2026-05-11_202053_passo_1.png Graphic file (type png)
+<use figuras/2026-05-11_202053_passo_1.png>
+Package pdftex.def Info: figuras/2026-05-11_202053_passo_1.png  used on input l
+ine 554.
+(pdftex.def)             Requested size: 109.26108pt x 54.18741pt.
+<figuras/2026-05-11_202053_passo_2.png, id=226, 1003.75pt x 497.86pt>
+File: figuras/2026-05-11_202053_passo_2.png Graphic file (type png)
+<use figuras/2026-05-11_202053_passo_2.png>
+Package pdftex.def Info: figuras/2026-05-11_202053_passo_2.png  used on input l
+ine 558.
+(pdftex.def)             Requested size: 109.26108pt x 54.18741pt.
+<figuras/2026-05-11_202053_passo_3.png, id=227, 1003.75pt x 497.86pt>
+File: figuras/2026-05-11_202053_passo_3.png Graphic file (type png)
+<use figuras/2026-05-11_202053_passo_3.png>
+Package pdftex.def Info: figuras/2026-05-11_202053_passo_3.png  used on input l
+ine 562.
+(pdftex.def)             Requested size: 109.26108pt x 54.18741pt.
+<figuras/2026-05-11_202053_passo_4.png, id=228, 1003.75pt x 497.86pt>
+File: figuras/2026-05-11_202053_passo_4.png Graphic file (type png)
+<use figuras/2026-05-11_202053_passo_4.png>
+Package pdftex.def Info: figuras/2026-05-11_202053_passo_4.png  used on input l
+ine 566.
+(pdftex.def)             Requested size: 109.26108pt x 54.18741pt.
+<figuras/2026-05-11_202053_passo_5.png, id=229, 1003.75pt x 497.86pt>
+File: figuras/2026-05-11_202053_passo_5.png Graphic file (type png)
+<use figuras/2026-05-11_202053_passo_5.png>
+Package pdftex.def Info: figuras/2026-05-11_202053_passo_5.png  used on input l
+ine 572.
+(pdftex.def)             Requested size: 109.26108pt x 54.18741pt.
+<figuras/2026-05-11_202053_passo_6.png, id=230, 1003.75pt x 497.86pt>
+File: figuras/2026-05-11_202053_passo_6.png Graphic file (type png)
+<use figuras/2026-05-11_202053_passo_6.png>
+Package pdftex.def Info: figuras/2026-05-11_202053_passo_6.png  used on input l
+ine 576.
+(pdftex.def)             Requested size: 109.26108pt x 54.18741pt.
+<figuras/2026-05-11_202053_passo_7.png, id=231, 1003.75pt x 497.86pt>
+File: figuras/2026-05-11_202053_passo_7.png Graphic file (type png)
+<use figuras/2026-05-11_202053_passo_7.png>
+Package pdftex.def Info: figuras/2026-05-11_202053_passo_7.png  used on input l
+ine 580.
+(pdftex.def)             Requested size: 109.26108pt x 54.18741pt.
+<figuras/2026-05-11_202053_passo_8.png, id=232, 1003.75pt x 497.86pt>
+File: figuras/2026-05-11_202053_passo_8.png Graphic file (type png)
+<use figuras/2026-05-11_202053_passo_8.png>
+Package pdftex.def Info: figuras/2026-05-11_202053_passo_8.png  used on input l
+ine 584.
+(pdftex.def)             Requested size: 109.26108pt x 54.18741pt.
+<figuras/2026-05-11_202053_passo_9.png, id=233, 1003.75pt x 497.86pt>
+File: figuras/2026-05-11_202053_passo_9.png Graphic file (type png)
+<use figuras/2026-05-11_202053_passo_9.png>
+Package pdftex.def Info: figuras/2026-05-11_202053_passo_9.png  used on input l
+ine 590.
+(pdftex.def)             Requested size: 364.19667pt x 180.64244pt.
+ [15 <C:/Users/Felipe Costa/Downloads/BACKUP/Downloads/TP_RP_2026_1/versão_2/l
+atex/figuras/2026-05-16_165358_passo_1.png (PNG copy)> <C:/Users/Felipe Costa/D
+ownloads/BACKUP/Downloads/TP_RP_2026_1/versão_2/latex/figuras/2026-05-16_16535
+8_passo_2.png (PNG copy)> <C:/Users/Felipe Costa/Downloads/BACKUP/Downloads/TP_
+RP_2026_1/versão_2/latex/figuras/2026-05-16_165358_passo_3.png (PNG copy)> <C:
+/Users/Felipe Costa/Downloads/BACKUP/Downloads/TP_RP_2026_1/versão_2/latex/fig
+uras/2026-05-16_165358_passo_4.png (PNG copy)> <C:/Users/Felipe Costa/Downloads
+/BACKUP/Downloads/TP_RP_2026_1/versão_2/latex/figuras/2026-05-16_165358_passo_
+5.png (PNG copy)> <C:/Users/Felipe Costa/Downloads/BACKUP/Downloads/TP_RP_2026_
+1/versão_2/latex/figuras/2026-05-16_165358_passo_6.png (PNG copy)> <C:/Users/F
+elipe Costa/Downloads/BACKUP/Downloads/TP_RP_2026_1/versão_2/latex/figuras/202
+6-05-16_165358_passo_7.png (PNG copy)> <C:/Users/Felipe Costa/Downloads/BACKUP/
+Downloads/TP_RP_2026_1/versão_2/latex/figuras/2026-05-16_165358_passo_8.png (P
+NG copy)> <C:/Users/Felipe Costa/Downloads/BACKUP/Downloads/TP_RP_2026_1/versã
+o_2/latex/figuras/2026-05-16_165358_passo_9.png (PNG copy)>]
+<figuras/2026-06-14_131959_passo_1.png, id=239, 1003.75pt x 518.93875pt>
+File: figuras/2026-06-14_131959_passo_1.png Graphic file (type png)
+<use figuras/2026-06-14_131959_passo_1.png>
+Package pdftex.def Info: figuras/2026-06-14_131959_passo_1.png  used on input l
+ine 600.
+(pdftex.def)             Requested size: 109.26108pt x 56.48164pt.
+<figuras/2026-06-14_131959_passo_2.png, id=240, 1003.75pt x 518.93875pt>
+File: figuras/2026-06-14_131959_passo_2.png Graphic file (type png)
+<use figuras/2026-06-14_131959_passo_2.png>
+Package pdftex.def Info: figuras/2026-06-14_131959_passo_2.png  used on input l
+ine 604.
+(pdftex.def)             Requested size: 109.26108pt x 56.48164pt.
+<figuras/2026-06-14_131959_passo_3.png, id=241, 1003.75pt x 518.93875pt>
+File: figuras/2026-06-14_131959_passo_3.png Graphic file (type png)
+<use figuras/2026-06-14_131959_passo_3.png>
+Package pdftex.def Info: figuras/2026-06-14_131959_passo_3.png  used on input l
+ine 608.
+(pdftex.def)             Requested size: 109.26108pt x 56.48164pt.
+<figuras/2026-06-14_131959_passo_4.png, id=242, 1003.75pt x 518.93875pt>
+File: figuras/2026-06-14_131959_passo_4.png Graphic file (type png)
+<use figuras/2026-06-14_131959_passo_4.png>
+Package pdftex.def Info: figuras/2026-06-14_131959_passo_4.png  used on input l
+ine 612.
+(pdftex.def)             Requested size: 109.26108pt x 56.48164pt.
+<figuras/2026-06-14_131959_passo_5.png, id=243, 1003.75pt x 518.93875pt>
+File: figuras/2026-06-14_131959_passo_5.png Graphic file (type png)
+<use figuras/2026-06-14_131959_passo_5.png>
+Package pdftex.def Info: figuras/2026-06-14_131959_passo_5.png  used on input l
+ine 618.
+(pdftex.def)             Requested size: 109.26108pt x 56.48164pt.
+<figuras/2026-06-14_131959_passo_6.png, id=244, 1003.75pt x 518.93875pt>
+File: figuras/2026-06-14_131959_passo_6.png Graphic file (type png)
+<use figuras/2026-06-14_131959_passo_6.png>
+Package pdftex.def Info: figuras/2026-06-14_131959_passo_6.png  used on input l
+ine 622.
+(pdftex.def)             Requested size: 109.26108pt x 56.48164pt.
+<figuras/2026-06-14_131959_passo_7.png, id=245, 1003.75pt x 518.93875pt>
+File: figuras/2026-06-14_131959_passo_7.png Graphic file (type png)
+<use figuras/2026-06-14_131959_passo_7.png>
+Package pdftex.def Info: figuras/2026-06-14_131959_passo_7.png  used on input l
+ine 626.
+(pdftex.def)             Requested size: 109.26108pt x 56.48164pt.
+<figuras/2026-06-14_131959_passo_8.png, id=246, 1003.75pt x 518.93875pt>
+File: figuras/2026-06-14_131959_passo_8.png Graphic file (type png)
+<use figuras/2026-06-14_131959_passo_8.png>
+Package pdftex.def Info: figuras/2026-06-14_131959_passo_8.png  used on input l
+ine 630.
+(pdftex.def)             Requested size: 109.26108pt x 56.48164pt.
+<figuras/2026-06-14_131959_passo_9.png, id=247, 1003.75pt x 518.93875pt>
+File: figuras/2026-06-14_131959_passo_9.png Graphic file (type png)
+<use figuras/2026-06-14_131959_passo_9.png>
+Package pdftex.def Info: figuras/2026-06-14_131959_passo_9.png  used on input l
+ine 636.
+(pdftex.def)             Requested size: 364.19667pt x 188.29062pt.
+ [16 <C:/Users/Felipe Costa/Downloads/BACKUP/Downloads/TP_RP_2026_1/versão_2/l
+atex/figuras/2026-05-11_202053_passo_1.png (PNG copy)> <C:/Users/Felipe Costa/D
+ownloads/BACKUP/Downloads/TP_RP_2026_1/versão_2/latex/figuras/2026-05-11_20205
+3_passo_2.png (PNG copy)> <C:/Users/Felipe Costa/Downloads/BACKUP/Downloads/TP_
+RP_2026_1/versão_2/latex/figuras/2026-05-11_202053_passo_3.png (PNG copy)> <C:
+/Users/Felipe Costa/Downloads/BACKUP/Downloads/TP_RP_2026_1/versão_2/latex/fig
+uras/2026-05-11_202053_passo_4.png (PNG copy)> <C:/Users/Felipe Costa/Downloads
+/BACKUP/Downloads/TP_RP_2026_1/versão_2/latex/figuras/2026-05-11_202053_passo_
+5.png (PNG copy)> <C:/Users/Felipe Costa/Downloads/BACKUP/Downloads/TP_RP_2026_
+1/versão_2/latex/figuras/2026-05-11_202053_passo_6.png (PNG copy)> <C:/Users/F
+elipe Costa/Downloads/BACKUP/Downloads/TP_RP_2026_1/versão_2/latex/figuras/202
+6-05-11_202053_passo_7.png (PNG copy)> <C:/Users/Felipe Costa/Downloads/BACKUP/
+Downloads/TP_RP_2026_1/versão_2/latex/figuras/2026-05-11_202053_passo_8.png (P
+NG copy)> <C:/Users/Felipe Costa/Downloads/BACKUP/Downloads/TP_RP_2026_1/versã
+o_2/latex/figuras/2026-05-11_202053_passo_9.png (PNG copy)>]
+<figuras/contexto_legenda.png, id=255, 1003.75pt x 608.2725pt>
+File: figuras/contexto_legenda.png Graphic file (type png)
+<use figuras/contexto_legenda.png>
+Package pdftex.def Info: figuras/contexto_legenda.png  used on input line 647.
+(pdftex.def)             Requested size: 386.96027pt x 234.49657pt.
+ [17 <C:/Users/Felipe Costa/Downloads/BACKUP/Downloads/TP_RP_2026_1/versão_2/l
+atex/figuras/2026-06-14_131959_passo_1.png (PNG copy)> <C:/Users/Felipe Costa/D
+ownloads/BACKUP/Downloads/TP_RP_2026_1/versão_2/latex/figuras/2026-06-14_13195
+9_passo_2.png (PNG copy)> <C:/Users/Felipe Costa/Downloads/BACKUP/Downloads/TP_
+RP_2026_1/versão_2/latex/figuras/2026-06-14_131959_passo_3.png (PNG copy)> <C:
+/Users/Felipe Costa/Downloads/BACKUP/Downloads/TP_RP_2026_1/versão_2/latex/fig
+uras/2026-06-14_131959_passo_4.png (PNG copy)> <C:/Users/Felipe Costa/Downloads
+/BACKUP/Downloads/TP_RP_2026_1/versão_2/latex/figuras/2026-06-14_131959_passo_
+5.png (PNG copy)> <C:/Users/Felipe Costa/Downloads/BACKUP/Downloads/TP_RP_2026_
+1/versão_2/latex/figuras/2026-06-14_131959_passo_6.png (PNG copy)> <C:/Users/F
+elipe Costa/Downloads/BACKUP/Downloads/TP_RP_2026_1/versão_2/latex/figuras/202
+6-06-14_131959_passo_7.png (PNG copy)> <C:/Users/Felipe Costa/Downloads/BACKUP/
+Downloads/TP_RP_2026_1/versão_2/latex/figuras/2026-06-14_131959_passo_8.png (P
+NG copy)> <C:/Users/Felipe Costa/Downloads/BACKUP/Downloads/TP_RP_2026_1/versã
+o_2/latex/figuras/2026-06-14_131959_passo_9.png (PNG copy)>] [18 <C:/Users/Feli
+pe Costa/Downloads/BACKUP/Downloads/TP_RP_2026_1/versão_2/latex/figuras/contex
+to_legenda.png (PNG copy)>] [19]
+(C:\Users\Felipe Costa\Downloads\BACKUP\Downloads\TP_RP_2026_1\versão_2\latex\
+relatorio.aux)
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-12-24>
+ ***********
+Package rerunfilecheck Info: File `relatorio.out' has not changed.
+(rerunfilecheck)             Checksum: 6D70B043AAF99991070633C341851600;3094.
+ ) 
+Here is how much of TeX's memory you used:
+ 13927 strings out of 467871
+ 241209 string characters out of 5414953
+ 653206 words of memory out of 5000000
+ 42580 multiletter control sequences out of 15000+600000
+ 646905 words of font info for 81 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 75i,10n,84p,1105b,548s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\Felipe Costa\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi6
+00\ectt1000.pk> <C:\Users\Felipe Costa\AppData\Local\MiKTeX\fonts/pk/ljfour/jkn
+appen/ec/dpi600\ecti1000.pk> <C:\Users\Felipe Costa\AppData\Local\MiKTeX\fonts/
+pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\Felipe Costa\AppData\Local\
+MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\Felipe Costa\A
+ppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\F
+elipe Costa\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk
+> <C:\Users\Felipe Costa\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
+0\ecti1200.pk> <C:\Users\Felipe Costa\AppData\Local\MiKTeX\fonts/pk/ljfour/jkna
+ppen/ec/dpi600\ecbx1200.pk> <C:\Users\Felipe Costa\AppData\Local\MiKTeX\fonts/p
+k/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\Felipe Costa\AppData\Local\M
+iKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\Felipe Costa\Ap
+pData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\Fe
+lipe Costa\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk>
+ <C:\Users\Felipe Costa\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600
+\ecrm1095.pk> <C:\Users\Felipe Costa\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
+pen/ec/dpi600\ecbx1095.pk> <C:\Users\Felipe Costa\AppData\Local\MiKTeX\fonts/pk
+/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\Felipe Costa\AppData\Local\Mi
+KTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2074.pk><C:/Users/Felipe Costa/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/F
+elipe Costa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12
+.pfb><C:/Users/Felipe Costa/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmr10.pfb><C:/Users/Felipe Costa/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Felipe Costa/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Felipe Costa/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on "C:\Users\Felipe Costa\Downloads\BACKUP\Downloads\TP_RP_2026_
+1\versão_2\latex\relatorio.pdf" (19 pages, 75515912 bytes).
+PDF statistics:
+ 911 PDF objects out of 1000 (max. 8388607)
+ 60 named destinations out of 1000 (max. 500000)
+ 494 words of extra memory for PDF output out of 10000 (max. 10000000)
+

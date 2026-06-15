@@ -1,0 +1,1381 @@
+{
+  "graph_metadata": {
+    "source_image": "Captura de tela 2026-06-14 131959.png",
+    "n_vertices": 67,
+    "n_edges": 40,
+    "surface_legend": {
+      "1": "asfalto",
+      "2": "terra"
+    }
+  },
+  "vertices": [
+    {
+      "node_id": 0,
+      "x": 0.0,
+      "y": 2.5,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 1,
+      "x": 494.0,
+      "y": 2.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 2,
+      "x": 1727.0,
+      "y": 18.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 3,
+      "x": 497.2,
+      "y": 40.0,
+      "type": "intersection"
+    },
+    {
+      "node_id": 4,
+      "x": 509.0,
+      "y": 41.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 5,
+      "x": 1878.0,
+      "y": 59.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 6,
+      "x": 0.0,
+      "y": 97.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 7,
+      "x": 1849.8,
+      "y": 99.0,
+      "type": "intersection"
+    },
+    {
+      "node_id": 8,
+      "x": 343.0,
+      "y": 99.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 9,
+      "x": 380.0,
+      "y": 99.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 10,
+      "x": 458.0,
+      "y": 116.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 11,
+      "x": 0.0,
+      "y": 143.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 12,
+      "x": 0.0,
+      "y": 163.5,
+      "type": "waypoint"
+    },
+    {
+      "node_id": 13,
+      "x": 505.8,
+      "y": 166.0,
+      "type": "intersection"
+    },
+    {
+      "node_id": 14,
+      "x": 1882.0,
+      "y": 168.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 15,
+      "x": 1895.0,
+      "y": 168.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 16,
+      "x": 1716.0,
+      "y": 169.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 17,
+      "x": 1888.0,
+      "y": 169.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 18,
+      "x": 525.0,
+      "y": 190.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 19,
+      "x": 1944.0,
+      "y": 212.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 20,
+      "x": 751.0,
+      "y": 349.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 21,
+      "x": 651.0,
+      "y": 382.0,
+      "type": "intersection"
+    },
+    {
+      "node_id": 22,
+      "x": 642.0,
+      "y": 384.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 23,
+      "x": 654.0,
+      "y": 388.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 24,
+      "x": 825.0,
+      "y": 402.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 25,
+      "x": 0.0,
+      "y": 443.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 26,
+      "x": 894.0,
+      "y": 444.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 27,
+      "x": 0.0,
+      "y": 445.0,
+      "type": "waypoint"
+    },
+    {
+      "node_id": 28,
+      "x": 2.3,
+      "y": 449.3,
+      "type": "intersection"
+    },
+    {
+      "node_id": 29,
+      "x": 0.0,
+      "y": 454.5,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 30,
+      "x": 705.0,
+      "y": 465.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 31,
+      "x": 2055.0,
+      "y": 490.5,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 32,
+      "x": 1440.0,
+      "y": 622.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 33,
+      "x": 215.0,
+      "y": 638.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 34,
+      "x": 1077.0,
+      "y": 702.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 35,
+      "x": 257.0,
+      "y": 712.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 36,
+      "x": 266.0,
+      "y": 728.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 37,
+      "x": 1539.0,
+      "y": 766.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 38,
+      "x": 0.0,
+      "y": 792.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 39,
+      "x": 0.0,
+      "y": 798.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 40,
+      "x": 0.0,
+      "y": 825.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 41,
+      "x": 0.0,
+      "y": 829.0,
+      "type": "waypoint"
+    },
+    {
+      "node_id": 42,
+      "x": 0.0,
+      "y": 854.5,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 43,
+      "x": 2027.0,
+      "y": 886.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 44,
+      "x": 0.0,
+      "y": 900.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 45,
+      "x": 0.0,
+      "y": 902.0,
+      "type": "waypoint"
+    },
+    {
+      "node_id": 46,
+      "x": 1609.0,
+      "y": 903.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 47,
+      "x": 0.0,
+      "y": 913.5,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 48,
+      "x": 506.0,
+      "y": 913.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 49,
+      "x": 490.0,
+      "y": 926.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 50,
+      "x": 2039.0,
+      "y": 933.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 51,
+      "x": 0.0,
+      "y": 954.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 52,
+      "x": 931.0,
+      "y": 954.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 53,
+      "x": 0.0,
+      "y": 959.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 54,
+      "x": 881.8,
+      "y": 990.0,
+      "type": "intersection"
+    },
+    {
+      "node_id": 55,
+      "x": 0.0,
+      "y": 995.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 56,
+      "x": 866.0,
+      "y": 995.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 57,
+      "x": 0.0,
+      "y": 1008.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 58,
+      "x": 1565.0,
+      "y": 1023.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 59,
+      "x": 0.0,
+      "y": 1036.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 60,
+      "x": 904.0,
+      "y": 1038.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 61,
+      "x": 0.0,
+      "y": 1047.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 62,
+      "x": 0.3,
+      "y": 1062.0,
+      "type": "waypoint"
+    },
+    {
+      "node_id": 63,
+      "x": 1723.0,
+      "y": 1063.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 64,
+      "x": 1573.5,
+      "y": 1064.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 65,
+      "x": 1.0,
+      "y": 0.0,
+      "type": "endpoint"
+    },
+    {
+      "node_id": 66,
+      "x": 957.0,
+      "y": 1064.0,
+      "type": "endpoint"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": 0,
+      "source": 0,
+      "target": 65,
+      "surface": "terra",
+      "width_px": 4.0,
+      "length_px": 2.4,
+      "confidence": 1.0,
+      "polyline": [
+        [
+          0.0,
+          2.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 1,
+      "source": 1,
+      "target": 3,
+      "surface": "terra",
+      "width_px": 6.0,
+      "length_px": 39.1,
+      "confidence": 1.0,
+      "polyline": [
+        [
+          494.0,
+          2.0
+        ],
+        [
+          494.0,
+          31.0
+        ],
+        [
+          497.0,
+          39.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 2,
+      "source": 2,
+      "target": 7,
+      "surface": "terra",
+      "width_px": 11.2,
+      "length_px": 155.6,
+      "confidence": 0.427,
+      "polyline": [
+        [
+          1727.0,
+          18.0
+        ],
+        [
+          1788.0,
+          62.0
+        ],
+        [
+          1849.0,
+          99.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 3,
+      "source": 3,
+      "target": 4,
+      "surface": "terra",
+      "width_px": 10.4,
+      "length_px": 11.4,
+      "confidence": 0.529,
+      "polyline": [
+        [
+          498.0,
+          40.0
+        ],
+        [
+          509.0,
+          41.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 4,
+      "source": 3,
+      "target": 13,
+      "surface": "terra",
+      "width_px": 10.0,
+      "length_px": 131.0,
+      "confidence": 0.793,
+      "polyline": [
+        [
+          497.0,
+          41.0
+        ],
+        [
+          498.0,
+          67.0
+        ],
+        [
+          502.0,
+          95.0
+        ],
+        [
+          506.0,
+          103.0
+        ],
+        [
+          510.0,
+          147.0
+        ],
+        [
+          510.0,
+          158.0
+        ],
+        [
+          506.0,
+          165.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 5,
+      "source": 5,
+      "target": 7,
+      "surface": "terra",
+      "width_px": 4.4,
+      "length_px": 50.6,
+      "confidence": 1.0,
+      "polyline": [
+        [
+          1878.0,
+          59.0
+        ],
+        [
+          1850.0,
+          98.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 6,
+      "source": 6,
+      "target": 11,
+      "surface": "asfalto",
+      "width_px": 4.0,
+      "length_px": 46.0,
+      "confidence": 0.404,
+      "polyline": [
+        [
+          0.0,
+          97.0
+        ],
+        [
+          0.0,
+          143.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 7,
+      "source": 7,
+      "target": 19,
+      "surface": "terra",
+      "width_px": 10.0,
+      "length_px": 165.6,
+      "confidence": 0.636,
+      "polyline": [
+        [
+          1850.0,
+          100.0
+        ],
+        [
+          1852.0,
+          104.0
+        ],
+        [
+          1910.0,
+          140.0
+        ],
+        [
+          1932.0,
+          159.0
+        ],
+        [
+          1942.0,
+          180.0
+        ],
+        [
+          1944.0,
+          212.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 8,
+      "source": 8,
+      "target": 9,
+      "surface": "terra",
+      "width_px": 8.4,
+      "length_px": 38.7,
+      "confidence": 0.791,
+      "polyline": [
+        [
+          343.0,
+          99.0
+        ],
+        [
+          380.0,
+          99.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 9,
+      "source": 10,
+      "target": 13,
+      "surface": "terra",
+      "width_px": 8.4,
+      "length_px": 74.7,
+      "confidence": 0.993,
+      "polyline": [
+        [
+          458.0,
+          116.0
+        ],
+        [
+          459.0,
+          125.0
+        ],
+        [
+          468.0,
+          138.0
+        ],
+        [
+          489.0,
+          158.0
+        ],
+        [
+          505.0,
+          166.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 10,
+      "source": 13,
+      "target": 18,
+      "surface": "terra",
+      "width_px": 4.4,
+      "length_px": 31.5,
+      "confidence": 0.711,
+      "polyline": [
+        [
+          506.0,
+          167.0
+        ],
+        [
+          509.0,
+          175.0
+        ],
+        [
+          525.0,
+          190.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 11,
+      "source": 14,
+      "target": 16,
+      "surface": "terra",
+      "width_px": 4.0,
+      "length_px": 168.9,
+      "confidence": 0.841,
+      "polyline": [
+        [
+          1882.0,
+          168.0
+        ],
+        [
+          1716.0,
+          169.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 12,
+      "source": 15,
+      "target": 17,
+      "surface": "terra",
+      "width_px": 4.0,
+      "length_px": 7.4,
+      "confidence": 1.0,
+      "polyline": [
+        [
+          1895.0,
+          168.0
+        ],
+        [
+          1888.0,
+          169.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 13,
+      "source": 20,
+      "target": 21,
+      "surface": "terra",
+      "width_px": 5.6,
+      "length_px": 114.5,
+      "confidence": 1.0,
+      "polyline": [
+        [
+          751.0,
+          349.0
+        ],
+        [
+          722.0,
+          361.0
+        ],
+        [
+          684.0,
+          364.0
+        ],
+        [
+          651.0,
+          382.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 14,
+      "source": 21,
+      "target": 22,
+      "surface": "terra",
+      "width_px": 8.6,
+      "length_px": 9.8,
+      "confidence": 0.55,
+      "polyline": [
+        [
+          651.0,
+          382.0
+        ],
+        [
+          642.0,
+          384.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 15,
+      "source": 21,
+      "target": 23,
+      "surface": "terra",
+      "width_px": 6.0,
+      "length_px": 7.2,
+      "confidence": 0.393,
+      "polyline": [
+        [
+          651.0,
+          382.0
+        ],
+        [
+          654.0,
+          388.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 16,
+      "source": 24,
+      "target": 26,
+      "surface": "terra",
+      "width_px": 5.6,
+      "length_px": 89.6,
+      "confidence": 1.0,
+      "polyline": [
+        [
+          825.0,
+          402.0
+        ],
+        [
+          855.0,
+          403.0
+        ],
+        [
+          878.0,
+          424.0
+        ],
+        [
+          894.0,
+          444.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 17,
+      "source": 25,
+      "target": 27,
+      "surface": "terra",
+      "width_px": 2.8,
+      "length_px": 2.0,
+      "confidence": 0.488,
+      "polyline": [
+        [
+          0.0,
+          443.0
+        ],
+        [
+          0.0,
+          445.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 18,
+      "source": 27,
+      "target": 28,
+      "surface": "terra",
+      "width_px": 5.6,
+      "length_px": 4.8,
+      "confidence": 1.0,
+      "polyline": [
+        [
+          0.0,
+          445.0
+        ],
+        [
+          2.0,
+          449.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 19,
+      "source": 28,
+      "target": 33,
+      "surface": "terra",
+      "width_px": 4.4,
+      "length_px": 314.3,
+      "confidence": 1.0,
+      "polyline": [
+        [
+          3.0,
+          449.0
+        ],
+        [
+          36.0,
+          459.0
+        ],
+        [
+          87.0,
+          481.0
+        ],
+        [
+          110.0,
+          495.0
+        ],
+        [
+          130.0,
+          512.0
+        ],
+        [
+          180.0,
+          570.0
+        ],
+        [
+          215.0,
+          638.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 20,
+      "source": 28,
+      "target": 29,
+      "surface": "terra",
+      "width_px": 5.6,
+      "length_px": 4.8,
+      "confidence": 0.804,
+      "polyline": [
+        [
+          2.0,
+          450.0
+        ],
+        [
+          0.0,
+          454.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 21,
+      "source": 30,
+      "target": 34,
+      "surface": "terra",
+      "width_px": 5.6,
+      "length_px": 477.2,
+      "confidence": 1.0,
+      "polyline": [
+        [
+          705.0,
+          465.0
+        ],
+        [
+          731.0,
+          497.0
+        ],
+        [
+          895.0,
+          657.0
+        ],
+        [
+          923.0,
+          669.0
+        ],
+        [
+          1045.0,
+          675.0
+        ],
+        [
+          1063.0,
+          684.0
+        ],
+        [
+          1077.0,
+          702.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 22,
+      "source": 31,
+      "target": 63,
+      "surface": "terra",
+      "width_px": 8.4,
+      "length_px": 722.4,
+      "confidence": 0.476,
+      "polyline": [
+        [
+          2055.0,
+          491.0
+        ],
+        [
+          2051.0,
+          501.0
+        ],
+        [
+          1978.0,
+          559.0
+        ],
+        [
+          1929.0,
+          604.0
+        ],
+        [
+          1892.0,
+          643.0
+        ],
+        [
+          1873.0,
+          672.0
+        ],
+        [
+          1764.0,
+          893.0
+        ],
+        [
+          1745.0,
+          957.0
+        ],
+        [
+          1731.0,
+          1055.0
+        ],
+        [
+          1730.0,
+          1059.0
+        ],
+        [
+          1723.0,
+          1063.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 23,
+      "source": 32,
+      "target": 37,
+      "surface": "terra",
+      "width_px": 4.0,
+      "length_px": 185.0,
+      "confidence": 1.0,
+      "polyline": [
+        [
+          1440.0,
+          622.0
+        ],
+        [
+          1450.0,
+          641.0
+        ],
+        [
+          1504.0,
+          720.0
+        ],
+        [
+          1539.0,
+          766.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 24,
+      "source": 35,
+      "target": 36,
+      "surface": "terra",
+      "width_px": 4.0,
+      "length_px": 19.7,
+      "confidence": 0.623,
+      "polyline": [
+        [
+          257.0,
+          712.0
+        ],
+        [
+          266.0,
+          728.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 25,
+      "source": 38,
+      "target": 39,
+      "surface": "terra",
+      "width_px": 4.0,
+      "length_px": 6.0,
+      "confidence": 0.873,
+      "polyline": [
+        [
+          0.0,
+          792.0
+        ],
+        [
+          0.0,
+          798.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 26,
+      "source": 40,
+      "target": 41,
+      "surface": "terra",
+      "width_px": 4.0,
+      "length_px": 4.0,
+      "confidence": 1.0,
+      "polyline": [
+        [
+          0.0,
+          825.0
+        ],
+        [
+          0.0,
+          829.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 27,
+      "source": 41,
+      "target": 42,
+      "surface": "terra",
+      "width_px": 4.0,
+      "length_px": 25.8,
+      "confidence": 1.0,
+      "polyline": [
+        [
+          0.0,
+          829.0
+        ],
+        [
+          0.0,
+          854.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 28,
+      "source": 43,
+      "target": 50,
+      "surface": "terra",
+      "width_px": 5.6,
+      "length_px": 52.0,
+      "confidence": 1.0,
+      "polyline": [
+        [
+          2027.0,
+          886.0
+        ],
+        [
+          2034.0,
+          898.0
+        ],
+        [
+          2039.0,
+          933.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 29,
+      "source": 44,
+      "target": 45,
+      "surface": "terra",
+      "width_px": 2.8,
+      "length_px": 2.0,
+      "confidence": 0.9,
+      "polyline": [
+        [
+          0.0,
+          900.0
+        ],
+        [
+          0.0,
+          902.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 30,
+      "source": 45,
+      "target": 47,
+      "surface": "terra",
+      "width_px": 4.0,
+      "length_px": 11.8,
+      "confidence": 0.882,
+      "polyline": [
+        [
+          0.0,
+          902.0
+        ],
+        [
+          0.0,
+          913.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 31,
+      "source": 46,
+      "target": 58,
+      "surface": "terra",
+      "width_px": 4.4,
+      "length_px": 138.2,
+      "confidence": 1.0,
+      "polyline": [
+        [
+          1609.0,
+          903.0
+        ],
+        [
+          1565.0,
+          1023.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 32,
+      "source": 48,
+      "target": 49,
+      "surface": "terra",
+      "width_px": 4.4,
+      "length_px": 21.4,
+      "confidence": 0.478,
+      "polyline": [
+        [
+          506.0,
+          913.0
+        ],
+        [
+          490.0,
+          926.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 33,
+      "source": 51,
+      "target": 53,
+      "surface": "terra",
+      "width_px": 3.4,
+      "length_px": 5.0,
+      "confidence": 0.995,
+      "polyline": [
+        [
+          0.0,
+          954.0
+        ],
+        [
+          0.0,
+          959.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 34,
+      "source": 52,
+      "target": 54,
+      "surface": "terra",
+      "width_px": 4.4,
+      "length_px": 64.1,
+      "confidence": 1.0,
+      "polyline": [
+        [
+          931.0,
+          954.0
+        ],
+        [
+          897.0,
+          975.0
+        ],
+        [
+          882.0,
+          989.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 35,
+      "source": 54,
+      "target": 56,
+      "surface": "terra",
+      "width_px": 4.4,
+      "length_px": 17.1,
+      "confidence": 0.803,
+      "polyline": [
+        [
+          881.0,
+          990.0
+        ],
+        [
+          866.0,
+          995.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 36,
+      "source": 54,
+      "target": 60,
+      "surface": "terra",
+      "width_px": 4.4,
+      "length_px": 56.1,
+      "confidence": 0.769,
+      "polyline": [
+        [
+          882.0,
+          991.0
+        ],
+        [
+          904.0,
+          1038.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 37,
+      "source": 55,
+      "target": 57,
+      "surface": "terra",
+      "width_px": 4.0,
+      "length_px": 13.0,
+      "confidence": 0.959,
+      "polyline": [
+        [
+          0.0,
+          995.0
+        ],
+        [
+          0.0,
+          1008.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 38,
+      "source": 59,
+      "target": 61,
+      "surface": "terra",
+      "width_px": 4.0,
+      "length_px": 11.0,
+      "confidence": 0.234,
+      "polyline": [
+        [
+          0.0,
+          1036.0
+        ],
+        [
+          0.0,
+          1047.0
+        ]
+      ]
+    },
+    {
+      "edge_id": 39,
+      "source": 64,
+      "target": 66,
+      "surface": "terra",
+      "width_px": 8.4,
+      "length_px": 658.2,
+      "confidence": 0.388,
+      "polyline": [
+        [
+          1573.0,
+          1064.0
+        ],
+        [
+          1521.0,
+          1059.0
+        ],
+        [
+          1512.0,
+          1054.0
+        ],
+        [
+          1396.0,
+          1026.0
+        ],
+        [
+          1328.0,
+          1015.0
+        ],
+        [
+          1291.0,
+          1013.0
+        ],
+        [
+          1052.0,
+          1014.0
+        ],
+        [
+          1029.0,
+          1019.0
+        ],
+        [
+          1009.0,
+          1029.0
+        ],
+        [
+          967.0,
+          1061.0
+        ],
+        [
+          957.0,
+          1064.0
+        ]
+      ]
+    }
+  ]
+}

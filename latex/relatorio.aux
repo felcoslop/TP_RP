@@ -1,0 +1,61 @@
+\relax 
+\providecommand \babel@aux [2]{\global \let \babel@toc \@gobbletwo }
+\@nameuse{bbl@beforestart}
+\catcode `"\active 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\babel@aux{brazil}{}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introdução}{1}{section.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}Revisão Bibliográfica}{2}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Dados}{3}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Dataset SpaceNet 3}{3}{subsection.3.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Exemplo de um tile do SpaceNet 3: a imagem original (entrada) vem primeiro, seguida da máscara de via e do grafo de referência. As máscaras binárias não contêm rótulo asfalto/terra --- essa distinção é feita por heurística (Seção 4.6).}}{3}{figure.caption.1}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:dataset}{{1}{3}{Exemplo de um tile do SpaceNet 3: a imagem original (entrada) vem primeiro, seguida da máscara de via e do grafo de referência. As máscaras binárias não contêm rótulo asfalto/terra --- essa distinção é feita por heurística (Seção 4.6)}{figure.caption.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Sobre o ajuste fino (não realizado)}{3}{subsection.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Metodologia}{3}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Passo 1--2: pré-processamento e inferência multi-escala}{4}{subsection.4.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Passos 1--3: imagem original, realce de bordas e mapa de probabilidade de via produzido pela rede.}}{4}{figure.caption.2}\protected@file@percent }
+\newlabel{fig:passos1}{{2}{4}{Passos 1--3: imagem original, realce de bordas e mapa de probabilidade de via produzido pela rede}{figure.caption.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Passo 3: máscaras de contexto}{4}{subsection.4.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Codificação de cores da máscara de contexto (\texttt  {context\_masks}).}}{5}{table.caption.3}\protected@file@percent }
+\newlabel{tab:cores}{{1}{5}{Codificação de cores da máscara de contexto (\texttt {context\_masks})}{table.caption.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Detecção automática de domínio: urbano vs.\ rural}{6}{subsection.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Passos 4--5: binarização e grafo}{6}{subsection.4.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Passos 3--4: máscaras de contexto (cores da Tabela~\ref {tab:cores}), máscara binária e grafo bruto (vermelho = cruzamentos; amarelo = pontas).}}{7}{figure.caption.4}\protected@file@percent }
+\newlabel{fig:passos2}{{3}{7}{Passos 3--4: máscaras de contexto (cores da Tabela~\ref {tab:cores}), máscara binária e grafo bruto (vermelho = cruzamentos; amarelo = pontas)}{figure.caption.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Passo 5: refino do grafo (fonte única de verdade)}{7}{subsection.4.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}Passo 6: classificação de pavimento por aresta}{9}{subsection.4.6}\protected@file@percent }
+\newlabel{sec:classif}{{4.6}{9}{Passo 6: classificação de pavimento por aresta}{subsection.4.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Passos 5--6: grafo refinado e sobreposição final (azul = asfalto, laranja = terra).}}{9}{figure.caption.5}\protected@file@percent }
+\newlabel{fig:passos3}{{4}{9}{Passos 5--6: grafo refinado e sobreposição final (azul = asfalto, laranja = terra)}{figure.caption.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.7}Saídas}{9}{subsection.4.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Resultados}{9}{section.5}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Resumo qualitativo por imagem.}}{10}{table.caption.6}\protected@file@percent }
+\newlabel{tab:resumo}{{2}{10}{Resumo qualitativo por imagem}{table.caption.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Resultados do pipeline passo a passo para a imagem 135241 --- Urbano denso (cidade e quarteirões bem definidos).}}{11}{figure.caption.7}\protected@file@percent }
+\newlabel{fig:res_2026-06-12_135241}{{5}{11}{Resultados do pipeline passo a passo para a imagem 135241 --- Urbano denso (cidade e quarteirões bem definidos)}{figure.caption.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Resultados do pipeline passo a passo para a imagem 003536 --- Favela em vale verde (área residencial densa, quarteirões consolidados).}}{12}{figure.caption.8}\protected@file@percent }
+\newlabel{fig:res_2026-05-12_003536}{{6}{12}{Resultados do pipeline passo a passo para a imagem 003536 --- Favela em vale verde (área residencial densa, quarteirões consolidados)}{figure.caption.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Resultados do pipeline passo a passo para a imagem 151237 --- Favela em vale verde (área residencial com vegetação).}}{13}{figure.caption.9}\protected@file@percent }
+\newlabel{fig:res_2026-05-12_151237}{{7}{13}{Resultados do pipeline passo a passo para a imagem 151237 --- Favela em vale verde (área residencial com vegetação)}{figure.caption.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Resultados do pipeline passo a passo para a imagem 020059 --- Urbano denso com vias longas paralelas.}}{14}{figure.caption.10}\protected@file@percent }
+\newlabel{fig:res_2026-05-13_020059}{{8}{14}{Resultados do pipeline passo a passo para a imagem 020059 --- Urbano denso com vias longas paralelas}{figure.caption.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Resultados do pipeline passo a passo para a imagem 165358 --- Rural com estradas de terra finas e sinuosas.}}{15}{figure.caption.11}\protected@file@percent }
+\newlabel{fig:res_2026-05-16_165358}{{9}{15}{Resultados do pipeline passo a passo para a imagem 165358 --- Rural com estradas de terra finas e sinuosas}{figure.caption.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Resultados do pipeline passo a passo para a imagem 202053 --- Imagem de satélite do PDF do professor (domínio rural).}}{16}{figure.caption.12}\protected@file@percent }
+\newlabel{fig:res_2026-05-11_202053}{{10}{16}{Resultados do pipeline passo a passo para a imagem 202053 --- Imagem de satélite do PDF do professor (domínio rural)}{figure.caption.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Resultados do pipeline passo a passo para a imagem 131959 --- Rural com malha viária muito esparsa.}}{17}{figure.caption.13}\protected@file@percent }
+\newlabel{fig:res_2026-06-14_131959}{{11}{17}{Resultados do pipeline passo a passo para a imagem 131959 --- Rural com malha viária muito esparsa}{figure.caption.13}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Máscara de contexto (cores da Tabela 1): vermelho = quarteirão, verde = vegetação, rosa = via clara rejeitada. As ruas detectadas são recortadas do vermelho.}}{18}{figure.caption.14}\protected@file@percent }
+\newlabel{fig:contexto}{{12}{18}{Máscara de contexto (cores da Tabela 1): vermelho = quarteirão, verde = vegetação, rosa = via clara rejeitada. As ruas detectadas são recortadas do vermelho}{figure.caption.14}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Limitações e Trabalhos Futuros}{18}{section.6}\protected@file@percent }
+\newlabel{sec:futuro}{{6}{18}{Limitações e Trabalhos Futuros}{section.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusão}{18}{section.7}\protected@file@percent }
+\bibcite{samroad}{1}
+\bibcite{samroadpp}{2}
+\bibcite{sam}{3}
+\bibcite{cldice}{4}
+\bibcite{spacenet}{5}
+\gdef \@abspage@last{19}
